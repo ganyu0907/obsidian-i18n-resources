@@ -1,1 +1,15 @@
-[]
+[
+    {
+        "id": "4sk4t-2zMARtCbJBaRwYteJs03XevBha",
+        "plugin": "systemsculpt-ai",
+        "type": "plugin",
+        "language": "zh-cn",
+        "version": "1.0.0",
+        "supported_versions": "5.4.0",
+        "title": "SystemSculpt AI",
+        "description": "SystemSculpt AI Localization & Tweaks",
+        "hash": "774be081774be081774be081774be081",
+        "created_at": "2026-04-13T21:30:45.620Z",
+        "updated_at": "2026-04-13T21:30:45.620Z"
+    }
+]
