@@ -12743,6 +12743,12 @@
                     "name": "title",
                     "source": "Readwise导入、同步、高亮显示",
                     "target": "Readwise 导入、同步、高亮显示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Stylus",
+                    "target": "手写笔"
                 }
             ],
             "regex": [
@@ -17133,6 +17139,2698 @@
                 {
                     "source": "name: \"Toggle Mobile Emulation Mode\"",
                     "target": "name: \"切换移动设备模拟模式\""
+                },
+                {
+                    "source": "error(`  TOTAL: ${timings.reduce((a,b)=>a+b.ms,0)}ms`)",
+                    "target": "error(`  总计: ${timings.reduce((a,b)=>a+b.ms,0)}ms`)"
+                },
+                {
+                    "source": "error(\"StreamResponse read failure\",error,{source:\"StreamingService\",method:\"streamResponse\"})}catch(e){}if(error instanceof DOMException&&error.name===\"AbortError\")",
+                    "target": "error(\"StreamResponse 读取失败\",error,{source:\"StreamingService\",method:\"streamResponse\"})}catch(e){}if(error instanceof DOMException&&error.name===\"AbortError\")"
+                },
+                {
+                    "source": "Notice(`${message}: ${errorMessage}`)",
+                    "target": "提示(`${message}: ${errorMessage}`)"
+                },
+                {
+                    "source": "Notice(`Moved ${ok} item${ok===1?\"\":\"s\"}${failed?` (${failed} failed)`:\"\"}.`)",
+                    "target": "提示(`已移动 ${ok} 个项目${ok===1?\"\":\"s\"}${failed?` (${failed} 个失败)`:\"\"}。`)"
+                },
+                {
+                    "source": "error(\"Progress handler threw\",error,{source:\"DocumentProcessingService\",method:\"emitProgress\",metadata:{stage:normalizedEvent.stage,filePath:meta.filePath}})}}mapNormalizedStatusToStage(status){switch((status!=null?status:\"\")",
+                    "target": "error(\"进度处理程序抛出异常\",error,{source:\"DocumentProcessingService\",method:\"emitProgress\",metadata:{stage:normalizedEvent.stage,filePath:meta.filePath}})};mapNormalizedStatusToStage(status){switch((status!=null?status:\"\")"
+                },
+                {
+                    "source": "error(\"Transcription pipeline failed\",catchedError,{filePath:file.path});throw catchedError}}extractHttpErrorMessage(status,statusText,rawResponseText){var _a15;const trimmed=String(rawResponseText||\"\")",
+                    "target": "error(\"转录流水线失败\",catchedError,{filePath:file.path});throw catchedError}extractHttpErrorMessage(status,statusText,rawResponseText){var _a15;const trimmed=String(rawResponseText||\"\")"
+                },
+                {
+                    "source": "log(\"[YouTubeTranscriptService] Async job completed:\",{jobId});return{text:response.text,lang:response.lang||\"unknown\",metadata:response.metadata}}if(response.status===\"failed\")",
+                    "target": "log(\"[YouTubeTranscriptService] 异步任务已完成：\",{jobId});return{text:response.text,lang:response.lang||\"unknown\",metadata:response.metadata}}if(response.status===\"failed\")"
+                },
+                {
+                    "source": "log(\"[YouTubeTranscriptService] Job still processing:\",{jobId,status:response.status,attempt:attempt+1})}throw new Error(\"Transcript generation timed out after 5 minutes\")",
+                    "target": "log(\"[YouTubeTranscriptService] 任务仍在处理中：\",{jobId,status:response.status,attempt:attempt+1});throw new Error(\"字幕生成在 5 分钟后超时\")"
+                },
+                {
+                    "source": "error(`[SystemSculpt] Generated invalid OpenAI tool:`,openAITool);throw new Error(`Failed to generate valid OpenAI tool`)",
+                    "target": "error(`[SystemSculpt] 生成了无效的 OpenAI 工具：`,openAITool);throw new Error(`未能生成有效的 OpenAI 工具`)"
+                },
+                {
+                    "source": "log(\"[Reasoning Verbatim] Input length:\",markdown.length);console.log(\"[Reasoning Verbatim] First 60 chars:\",markdown.substring(0,60));console.log(\"[Reasoning Verbatim] Contains bold markers:\",markdown.includes(\"**\")",
+                    "target": "log(\"[推理逐字稿] 输入长度：\",markdown.length);console.log(\"[推理逐字稿] 前 60 个字符：\",markdown.substring(0,60));console.log(\"[推理逐字稿] 是否包含粗体标记：\",markdown.includes(\"**\"))"
+                },
+                {
+                    "source": "log(\"[Reasoning Verbatim] Rendered HTML length:\",containerEl.innerHTML.length);console.log(\"[Reasoning Verbatim] Contains <strong> tags:\",containerEl.innerHTML.includes(\"<strong>\")",
+                    "target": "log(\"[推理逐字稿] 渲染后的 HTML 长度：\",containerEl.innerHTML.length);console.log(\"[推理逐字稿] 是否包含 <strong> 标签：\",containerEl.innerHTML.includes(\"<strong>\"))"
+                },
+                {
+                    "source": "setText(\"✓ Copied!\")",
+                    "target": "setText(\"✓ 已复制！\")"
+                },
+                {
+                    "source": "setButtonText(`Add ${count} File${count===1?\"\":\"s\"}`)",
+                    "target": "setButtonText(`添加 ${count} 个文件${count===1?\"\":\"s\"}`)"
+                },
+                {
+                    "source": "Notice(`Removed ${removedCount} non-existent file${removedCount>1?\"s\":\"\"} from context`)",
+                    "target": "提示(`已从上下文中移除 ${removedCount} 个不存在的文件${removedCount>1?\"s\":\"\"}`)"
+                },
+                {
+                    "source": "Notice(`Unable to update setting: ${(error==null?void 0:error.message)||error}`)",
+                    "target": "提示(`无法更新设置： ${(error==null?void 0:error.message)||error}`)"
+                },
+                {
+                    "source": "setText(`Unable to load microphones: ${(error==null?void 0:error.message)||error}`)",
+                    "target": "setText(`无法加载麦克风： ${(error==null?void 0:error.message)||error}`)"
+                },
+                {
+                    "source": "Notice(\"✓ Transcription inserted into document\")",
+                    "target": "提示(\"✓ 转录内容已插入文档\")"
+                },
+                {
+                    "source": "Notice(\"✓ Transcription copied to clipboard (no active editor)\")",
+                    "target": "提示(\"✓ 转录内容已复制到剪贴板（无活动编辑器）\")"
+                },
+                {
+                    "source": "Notice(\"❌ Failed to insert transcription\")",
+                    "target": "Notice(\"❌ 插入转录失败\")"
+                },
+                {
+                    "source": "Notice(\"✓ Transcription copied to clipboard instead\")",
+                    "target": "Notice(\"✓ 转录内容已复制到剪贴板\")"
+                },
+                {
+                    "source": "Notice(\"✓ Transcription complete. Check the transcription modal for results.\")",
+                    "target": "Notice(\"✓ 转录完成。请在转录弹窗中查看结果。\")"
+                },
+                {
+                    "source": "error(\"startRecording failed\",normalized);this.handleError(normalized)}}requestStop(){this.debug(\"requestStop invoked\")",
+                    "target": "error(\"startRecording 失败\",normalized);this.handleError(normalized)}}requestStop(){this.debug(\"requestStop 被调用\")"
+                },
+                {
+                    "source": "error(\"Failed to export chat\",error instanceof Error?error:void 0,{source:\"ChatExportModal\",method:\"handleExport\",metadata:{chatId:this.chatView.chatId,path:fullPath}});new import_obsidian58.Notice(\"Failed to export chat.\",6e3)}finally{button.removeAttribute(\"disabled\")",
+                    "target": "error(\"导出聊天记录失败\",error instanceof Error?error:void 0,{source:\"ChatExportModal\",method:\"handleExport\",metadata:{chatId:this.chatView.chatId,path:fullPath}});new import_obsidian58.Notice(\"导出聊天记录失败。\",6e3)}finally{button.removeAttribute(\"disabled\")"
+                },
+                {
+                    "source": "Notice(`Error executing command: ${error instanceof Error?error.message:String(error)}`)",
+                    "target": "提示(`执行命令时出错：${error instanceof Error?error.message:String(error)}`)"
+                },
+                {
+                    "source": "error(\"Failed to persist assistant message\",error,{source:\"ChatPersistenceManager\",method:\"commit\",metadata:{messageId:finalMessage==null?void 0:finalMessage.message_id}});throw error}await this.requestFlush(\"commit\")",
+                    "target": "error(\"无法持久化助手消息\",error,{source:\"ChatPersistenceManager\",method:\"commit\",metadata:{messageId:finalMessage==null?void 0:finalMessage.message_id}});throw error}await this.requestFlush(\"commit\")"
+                },
+                {
+                    "source": "Notice(`Unable to branch this chat from that message: ${error instanceof Error?error.message:String(error)}`)",
+                    "target": "提示(`无法从此消息分叉该聊天：${error instanceof Error?error.message:String(error)}`)"
+                },
+                {
+                    "source": "Notice(\"Chat is still loading—please wait a moment.\")",
+                    "target": "提示(\"聊天仍在加载中——请稍候。\")"
+                },
+                {
+                    "source": "Notice(\"Failed to save chat as note. Please try again.\",4e3)}}catch(error){new import_obsidian73.Notice(\"An error occurred while saving chat as note\",4e3)}}var import_obsidian73;var init_NotesHandlers=__esm({\"src/views/chatview/handlers/NotesHandlers.ts\"(){import_obsidian73=require(\"obsidian\")",
+                    "target": "提示(\"保存聊天为笔记失败，请重试。\",4e3)}}catch(error){new import_obsidian73.Notice(\"保存聊天为笔记时发生错误\",4e3)}}var import_obsidian73;var init_NotesHandlers=__esm({\"src/views/chatview/handlers/NotesHandlers.ts\"(){import_obsidian73=require(\"obsidian\")\"}"
+                },
+                {
+                    "source": "Notice(\"❌ Failed to set input value\")",
+                    "target": "Notice(\"❌ 无法设置输入值\")"
+                },
+                {
+                    "source": "Notice(\"Failed to load older messages\",4e3)}finally{setLoadingState(false)}}manageDomSize(){if(!this.chatContainer)return;const groups=Array.from(this.chatContainer.querySelectorAll(\":scope > .systemsculpt-message-group\")",
+                    "target": "Notice(\"加载早期消息失败\",4e3)}finally{setLoadingState(false)}}manageDomSize(){if(!this.chatContainer)return;const groups=Array.from(this.chatContainer.querySelectorAll(\":scope > .systemsculpt-message-group\")"
+                },
+                {
+                    "source": "error(\"EmbeddingsPendingFilesModal: failed to open file\",err);new import_obsidian83.Notice(\"Failed to open the selected file.\")",
+                    "target": "error(\"EmbeddingsPendingFilesModal: 无法打开文件\",err);new import_obsidian83.Notice(\"无法打开所选文件。\")"
+                },
+                {
+                    "source": "Notice(`Copied ${source.length} file path${source.length===1?\"\":\"s\"} to the clipboard.`)",
+                    "target": "Notice(`已将 ${source.length} 个文件路径${source.length===1?\"\":\"s\"} 复制到剪贴板。`)"
+                },
+                {
+                    "source": "error(\"EmbeddingsPendingFilesModal: failed to copy paths\",err);new import_obsidian83.Notice(\"Failed to copy paths. Please try again.\")",
+                    "target": "error(\"EmbeddingsPendingFilesModal: 无法复制路径\",err);new import_obsidian83.Notice(\"复制路径失败，请重试。\")"
+                },
+                {
+                    "source": "log(`Dataset adapter args do not include {{query}}; adapter should read query from ${DATASET_QUERY_ENV_KEY}.`)",
+                    "target": "log(`数据集适配器参数未包含 {{query}}；适配器应从 ${DATASET_QUERY_ENV_KEY} 读取查询。`)"
+                },
+                {
+                    "source": "setText(`${total} ${total===1?\"note\":\"notes\"}`)",
+                    "target": "setText(`${total} ${total===1?\"条笔记\":\"条笔记\"}`)"
+                },
+                {
+                    "source": "setText(`Duplicate keys detected (${Array.from(duplicateKeySet.values()).join(\", \")}). Last row wins.`)",
+                    "target": "setText(`检测到重复键（${Array.from(duplicateKeySet.values()).join(\", \")}）。最后一行生效。`)"
+                },
+                {
+                    "source": "error(`${label} JSON ${serialized}`)",
+                    "target": "错误(`${label} JSON ${serialized}`)"
+                },
+                {
+                    "source": "error(\"Quick Edit modal start failed\",error,{source:\"QuickFileEditModal\",method:\"submit\",metadata:{filePath:resolvedFile.path}});this.updateStatus(`Quick Edit failed: ${(error==null?void 0:error.message)||String(error)}`,\"error\")",
+                    "target": "error(\"快速编辑模态框启动失败\", error, {source: \"QuickFileEditModal\", method: \"submit\", metadata: {filePath: resolvedFile.path}});this.updateStatus(`快速编辑失败: ${(error==null?void 0:error.message)||String(error)}`, \"error\")"
+                },
+                {
+                    "source": "error(\"Quick Edit modal apply-all failed\",error,{source:\"QuickFileEditModal\",method:\"applyAllPendingEdits\"});this.updateStatus(`Unable to apply changes: ${(error==null?void 0:error.message)||String(error)}`,\"error\")",
+                    "target": "error(\"快速编辑模态框应用全部更改失败\", error, {source: \"QuickFileEditModal\", method: \"applyAllPendingEdits\"});this.updateStatus(`无法应用更改: ${(error==null?void 0:error.message)||String(error)}`, \"error\")"
+                },
+                {
+                    "source": "error(\"Quick Edit modal discard-all failed\",error,{source:\"QuickFileEditModal\",method:\"discardAllPendingEdits\"});this.updateStatus(`Unable to discard changes: ${(error==null?void 0:error.message)||String(error)}`,\"error\")",
+                    "target": "error(\"快速编辑模态框丢弃全部待处理更改失败\", error, {source: \"QuickFileEditModal\", method: \"discardAllPendingEdits\"});this.updateStatus(`无法丢弃更改: ${(error==null?void 0:error.message)||String(error)}`, \"error\")"
+                },
+                {
+                    "source": "error(\"Failed to open Quick Edit modal on mobile\",error,{source:\"QuickEditWidget\",method:\"showMobileVersion\"});new import_obsidian117.Notice(\"Unable to open Quick Edit on mobile.\")",
+                    "target": "error(\"在移动设备上打开快速编辑模态框失败\", error, {source: \"QuickEditWidget\", method: \"showMobileVersion\"});new import_obsidian117.Notice(\"无法在移动设备上打开快速编辑。\")"
+                },
+                {
+                    "source": "error(\"Quick Edit start failed\",error,{source:\"QuickEditWidget\",method:\"submit\",metadata:{filePath:resolvedFile.path}});this.updateStatus(`Quick Edit failed: ${(error==null?void 0:error.message)||String(error)}`,\"error\")",
+                    "target": "error(\"快速编辑启动失败\",error,{source:\"QuickEditWidget\",method:\"submit\",metadata:{filePath:resolvedFile.path}});this.updateStatus(`快速编辑失败: ${(error==null?void 0:error.message)||String(error)}`,\"error\")"
+                },
+                {
+                    "source": "error(\"Quick Edit apply-all failed\",error,{source:\"QuickEditWidget\",method:\"applyAllPendingEdits\"});this.updateStatus(`Unable to apply changes: ${(error==null?void 0:error.message)||String(error)}`,\"error\")",
+                    "target": "error(\"快速编辑应用全部更改失败\",error,{source:\"QuickEditWidget\",method:\"applyAllPendingEdits\"});this.updateStatus(`无法应用更改: ${(error==null?void 0:error.message)||String(error)}`,\"error\")"
+                },
+                {
+                    "source": "error(\"Quick Edit discard-all failed\",error,{source:\"QuickEditWidget\",method:\"discardAllPendingEdits\"});this.updateStatus(`Unable to discard changes: ${(error==null?void 0:error.message)||String(error)}`,\"error\")",
+                    "target": "error(\"快速编辑丢弃全部待处理更改失败\",error,{source:\"QuickEditWidget\",method:\"discardAllPendingEdits\"});this.updateStatus(`无法丢弃更改: ${(error==null?void 0:error.message)||String(error)}`,\"error\")"
+                },
+                {
+                    "source": "Notice(\"Open a note before running an automation.\",4e3);return}if(file.extension.toLowerCase()!==\"md\")",
+                    "target": "Notice(\"运行自动化前请先打开一篇笔记。\",4e3);return}if(file.extension.toLowerCase()!==\"md\")"
+                },
+                {
+                    "source": "Notice(`Unable to create Studio project: ${(error==null?void 0:error.message)||error}`)",
+                    "target": "Notice(`无法创建 Studio 项目: ${(error==null?void 0:error.message)||error}`)"
+                },
+                {
+                    "source": "Notice(`Unable to open SystemSculpt Studio: ${(error==null?void 0:error.message)||error}`)",
+                    "target": "提示(`无法打开 SystemSculpt Studio：${(error==null?void 0:error.message)||error}`)"
+                },
+                {
+                    "source": "Notice(`Studio run failed: ${result.error||result.runId}`)",
+                    "target": "提示(`Studio 运行失败：${result.error||result.runId}`)"
+                },
+                {
+                    "source": "Notice(`Unable to run Studio project: ${(error==null?void 0:error.message)||error}`)",
+                    "target": "提示(`无法运行 Studio 项目：${(error==null?void 0:error.message)||error}`)"
+                },
+                {
+                    "source": "log(`[studio.image_generation] Ignoring system prompt for node \"${context.node.id}\". Build prompt strategy upstream in a text-generation node.`)",
+                    "target": "日志(`[studio.image_generation] 忽略节点 \"${context.node.id}\" 的系统提示词。请在上游的文本生成节点中构建提示词策略。`)"
+                },
+                {
+                    "source": "log(`[studio.image_generation] Ignored ${ignoredOverflow} input image(s) beyond limit ${IMAGE_INPUT_MAX_COUNT}.`)",
+                    "target": "日志(`[studio.image_generation] 已忽略超出限制 ${IMAGE_INPUT_MAX_COUNT} 的 ${ignoredOverflow} 张输入图像。`)"
+                },
+                {
+                    "source": "setText(`Saved to ${payload.extractionPath} in ${seconds.toFixed(seconds<10?1:0)}s.`)",
+                    "target": "setText(`已保存至 ${payload.extractionPath}，耗时 ${seconds.toFixed(seconds<10?1:0)} 秒。`)"
+                },
+                {
+                    "source": "Notice(\"Unable to open converted file. See console for details.\",4e3)}this.close()}},{label:\"Close\",onClick:()=>this.close()}]);this.scheduleAutoClose()}markFailure(payload){var _a15,_b10;if(this.destroyed){return}this.container.addClass(\"is-error\")",
+                    "target": "Notice(\"无法打开转换后的文件，请查看控制台获取详细信息。\",4e3)}this.close()}},{label:\"关闭\",onClick:()=>this.close()}]);this.scheduleAutoClose()}markFailure(payload){var _a15,_b10;if(this.destroyed){return}this.container.addClass(\"is-error\")"
+                },
+                {
+                    "source": "error(\"Chat with file failed\",error,{filePath:file.path});new import_obsidian131.Notice(\"Failed to open chat with file\",5e3)}})})}addCopyImageToClipboardMenuItem(menu,file,context){menu.addItem(item=>{item.setTitle(\"SystemSculpt - Copy Image to Clipboard\")",
+                    "target": "error(\"使用文件发起聊天失败\",error,{filePath:file.path});new import_obsidian131.Notice(\"打开文件聊天失败\",5e3)}})})}addCopyImageToClipboardMenuItem(menu,file,context){menu.addItem(item=>{item.setTitle(\"SystemSculpt - 复制图像到剪贴板\")"
+                },
+                {
+                    "source": "error(\"Document conversion failed\",error,{filePath:file.path});modalHandle==null?void 0:modalHandle.markFailure({error,file});if(message==null?void 0:message.toLowerCase().includes(\"license\")",
+                    "target": "error(\"文档转换失败\",error,{filePath:file.path});modalHandle==null?void 0:modalHandle.markFailure({error,file});if(message==null?void 0:message.toLowerCase().includes(\"license\")"
+                },
+                {
+                    "source": "error(\"Desktop automation bridge request failed\",error,{source:\"DesktopAutomationBridge\",metadata:{request:requestLabel}});const payload={ok:false,error:message};if(statusCode>=500&&error instanceof Error){payload.request=requestLabel;payload.stack=String(error.stack||\"\")",
+                    "target": "error(\"桌面自动化桥接请求失败\",error,{source:\"DesktopAutomationBridge\",metadata:{request:requestLabel}});const payload={ok:false,error:message};if(statusCode>=500&&error instanceof Error){payload.request=requestLabel;payload.stack=String(error.stack||\"\")"
+                },
+                {
+                    "source": "setText(`Included remaining this cycle: ${this.formatCredits(metrics.includedRemainingForMeter)} of ${this.formatCredits(metrics.includedPerMonth)}`)",
+                    "target": "setText(`本周期剩余包含额度：${this.formatCredits(metrics.includedRemainingForMeter)} / ${this.formatCredits(metrics.includedPerMonth)}`)"
+                },
+                {
+                    "source": "setText(`Balance sources disagree (reported ${this.formatCredits(metrics.reportedTotalRemaining)} vs breakdown ${this.formatCredits(metrics.derivedTotalRemaining)}). Showing the conservative total to avoid overestimating available credits.`)",
+                    "target": "setText(`余额来源不一致（报告值 ${this.formatCredits(metrics.reportedTotalRemaining)} 与明细汇总 ${this.formatCredits(metrics.derivedTotalRemaining)}）。为避免高估可用额度，显示保守总计。`)"
+                },
+                {
+                    "source": "Notice(`Error running analysis: ${error instanceof Error?error.message:String(error)}`)",
+                    "target": "Notice(`运行分析时出错：${error instanceof Error?error.message:String(error)}`)"
+                },
+                {
+                    "source": "Notice(\"Validating license key...\",0);try{const success=await plugin.getLicenseManager().validateLicenseKey(true,false);validatingNotice.hide();if(success){try{await plugin.modelService.refreshModels()}catch(e){}new import_obsidian136.Notice(\"License activated successfully.\")",
+                    "target": "Notice(\"正在验证许可证密钥...\",0);try{const success=await plugin.getLicenseManager().validateLicenseKey(true,false);validatingNotice.hide();if(success){try{await plugin.modelService.refreshModels()}catch(e){}new import_obsidian136.Notice(\"许可证已成功激活。\")}"
+                },
+                {
+                    "source": "Notice(`License validation failed: ${(error==null?void 0:error.message)||error}`)",
+                    "target": "Notice(`许可证验证失败：${(error==null?void 0:error.message)||error}`)"
+                },
+                {
+                    "source": "setDesc(\"Fetching credits balance…\")",
+                    "target": "setDesc(\"正在获取积分余额…\")"
+                },
+                {
+                    "source": "setDesc(`Remaining: ${formatCredits3(balance.totalRemaining)} credits (Included ${formatCredits3(balance.includedRemaining)}/${formatCredits3(balance.includedPerMonth)}, Add-on ${formatCredits3(balance.addOnRemaining)}). Resets ${formatDate(balance.cycleEndsAt)}.${annualSavingsSuffix}`)",
+                    "target": "setDesc(`剩余：${formatCredits3(balance.totalRemaining)} 积分（含 ${formatCredits3(balance.includedRemaining)}/${formatCredits3(balance.includedPerMonth)}，附加 ${formatCredits3(balance.addOnRemaining)}）。将于 ${formatDate(balance.cycleEndsAt)} 重置。${annualSavingsSuffix}`)"
+                },
+                {
+                    "source": "Notice(`Failed to disconnect ${label}: ${error instanceof Error?error.message:String(error)}`)",
+                    "target": "Notice(`断开连接 ${label} 失败：${error instanceof Error?error.message:String(error)}`)"
+                },
+                {
+                    "source": "Notice(`${label} login failed: ${error instanceof Error?error.message:String(error)}`)",
+                    "target": "Notice(`${label} 登录失败：${error instanceof Error?error.message:String(error)}`)"
+                },
+                {
+                    "source": "Notice(`Failed to save API key: ${error instanceof Error?error.message:String(error)}`)",
+                    "target": "Notice(`保存 API 密钥失败：${error instanceof Error?error.message:String(error)}`)"
+                },
+                {
+                    "source": "setText(`Verification failed: ${(error==null?void 0:error.message)||error}`)",
+                    "target": "setText(`验证失败：${(error==null?void 0:error.message)||error}`)"
+                },
+                {
+                    "source": "setText(`Repair failed: ${(error==null?void 0:error.message)||error}`)",
+                    "target": "setText(`修复失败：${(error==null?void 0:error.message)||error}`)"
+                },
+                {
+                    "source": "setPlaceholder(`Manual backup ${new Date().toLocaleString()}`)",
+                    "target": "setPlaceholder(`手动备份 ${new Date().toLocaleString()}`)"
+                },
+                {
+                    "source": "Notice(\"Error loading backups: \"+error,3e3);return null}}async saveManualBackup(backupName){try{const safeNamePart=backupName.replace(/[^a-z0-9]/gi,\"-\")",
+                    "target": "Notice(\"加载备份时出错：\"+error,3e3);return null}}async saveManualBackup(backupName){try{const safeNamePart=backupName.replace(/[^a-z0-9]/gi,\"-\")"
+                },
+                {
+                    "source": "Notice(\"Backup file not found\",3e3);return false}const backupData=await this.plugin.app.vault.adapter.read(backupPath);const backupSettings=JSON.parse(backupData);if(!backupSettings||typeof backupSettings!==\"object\")",
+                    "target": "Notice(\"备份文件未找到\",3e3);return false}const backupData=await this.plugin.app.vault.adapter.read(backupPath);const backupSettings=JSON.parse(backupData);if(!backupSettings||typeof backupSettings!==\"object\")"
+                },
+                {
+                    "source": "Notice(`Failed to clear embeddings data: ${(error==null?void 0:error.message)||error}`)",
+                    "target": "提示(`清除嵌入数据失败：${(error==null?void 0:error.message)||error}`)"
+                },
+                {
+                    "source": "setDesc(\"Reuse the ignored files configured in Settings → Files & Links.\")",
+                    "target": "setDesc(\"复用在「设置 → 文件与链接」中配置的已忽略文件。\")"
+                },
+                {
+                    "source": "setDesc(\"Launch the new desktop-only Studio workspace (hard switch from CanvasFlow).\")",
+                    "target": "setDesc(\"启动仅限桌面端的新 Studio 工作区（从 CanvasFlow 强制切换）。\")"
+                },
+                {
+                    "source": "setDesc(\"SystemSculpt chooses the image engine for you. There is nothing to pick here in the plugin.\")",
+                    "target": "setDesc(\"SystemSculpt 将为您自动选择图像引擎，本插件中无需手动选择。\")"
+                },
+                {
+                    "source": "Notice(`Image generation API test failed: ${(error==null?void 0:error.message)||error}`)",
+                    "target": "提示(`图像生成 API 测试失败：${(error==null?void 0:error.message)||error}`)"
+                },
+                {
+                    "source": "setDesc(`How often to sync with Readwise. Default ${READWISE_SYNC_INTERVAL_DEFAULT_MINUTES} minutes.`)",
+                    "target": "setDesc(`与 Readwise 同步的频率。默认为 ${READWISE_SYNC_INTERVAL_DEFAULT_MINUTES} 分钟。`)"
+                },
+                {
+                    "source": "setText(`Syncing: ${current}/${total} - ${currentItem||\"\"}`)",
+                    "target": "setText(`同步中：${current}/${total} - ${currentItem||\"\"}`)"
+                },
+                {
+                    "source": "setDesc(\"Clear all custom settings and restore defaults for this plugin.\")",
+                    "target": "setDesc(\"清除所有自定义设置，并为此插件恢复默认设置。\")"
+                },
+                {
+                    "source": "setButtonText(\"Reset…\")",
+                    "target": "setButtonText(\"重置…\")"
+                },
+                {
+                    "source": "Notice(\"Unable to copy diagnostics (clipboard unavailable).\",5e3)}})});new import_obsidian149.Setting(containerEl).setName(\"Open diagnostics folder\")",
+                    "target": "Notice(\"无法复制诊断信息（剪贴板不可用）。\",5e3)}})});new import_obsidian149.Setting(containerEl).setName(\"打开诊断文件夹\")"
+                },
+                {
+                    "source": "Notice(\"SystemSculpt license key is empty. Pro features disabled.\",5e3)}else if(typeof previousLicenseValidState===\"undefined\")",
+                    "target": "Notice(\"系统雕刻师（SystemSculpt）许可证密钥为空，专业功能已禁用。\",5e3)}else if(typeof previousLicenseValidState===\"undefined\")"
+                },
+                {
+                    "source": "Notice(\"Unable to open changelog modal.\",4e3)})}showUpdateDrawer(versionInfo){this.removeUpdateDrawer();this.updateDrawerEl=document.createElement(\"div\")",
+                    "target": "Notice(\"无法打开更新日志模态框。\",4e3)})}showUpdateDrawer(versionInfo){this.removeUpdateDrawer();this.updateDrawerEl=document.createElement(\"div\")"
+                },
+                {
+                    "source": "Notice(`SystemSculpt imported ${imported} embeddings from legacy storage.`,5e3)}catch(e){}}}catch(e){}}const summary=await this.storage.upgradeVectorsToCanonicalFormat();if(summary.updated>0||summary.removed>0){try{const parts=[];if(summary.updated>0)parts.push(`${summary.updated} updated`)",
+                    "target": "Notice(`系统雕刻师（SystemSculpt）已从旧版存储中导入 ${imported} 个嵌入向量。`,5e3)}catch(e){}}}catch(e){}}const summary=await this.storage.upgradeVectorsToCanonicalFormat();if(summary.updated>0||summary.removed>0){try{const parts=[];if(summary.updated>0)parts.push(`${summary.updated} 个已更新`)"
+                },
+                {
+                    "source": "error(\"Failed to write resource metrics\",error,{source:\"ResourceMonitor\"})}}startLagProbe(){if(typeof window===\"undefined\")",
+                    "target": "error(\"写入资源指标失败\",error,{source:\"ResourceMonitor\"})}}startLagProbe(){if(typeof window===\"undefined\")"
+                },
+                {
+                    "source": "error(\"Workflow automation generation failed\",error,{source:\"WorkflowEngineService\",metadata:{workflow:automation.id,file:file.path,model:modelId}});if(error instanceof DOMException&&error.name===\"AbortError\")",
+                    "target": "error(\"工作流自动化生成失败\",error,{source:\"WorkflowEngineService\",metadata:{workflow:automation.id,file:file.path,model:modelId}});if(error instanceof DOMException&&error.name===\"AbortError\")"
+                },
+                {
+                    "source": "error(\"Failed to set up file context menu service after critical initialization\",error,{source:\"SystemSculptPlugin\"})}}).catch(error=>{const failureError=error instanceof Error?error:new Error(String(error!=null?error:\"critical initialization failed\")",
+                    "target": "error(\"在关键初始化后设置文件上下文菜单服务失败\",error,{source:\"SystemSculptPlugin\"})}}).catch(error=>{const failureError=error instanceof Error?error:new Error(String(error!=null?error:\"关键初始化失败\")"
+                },
+                {
+                    "source": "Notice(`Failed to toggle mobile emulation: ${error instanceof Error?error.message:String(error)}`)",
+                    "target": "Notice(`切换移动设备模拟失败: ${error instanceof Error?error.message:String(error)}`)"
+                },
+                {
+                    "source": "name:\"Claude Haiku 4.5 (Global)\"",
+                    "target": "name:\"Claude Haiku 4.5（全球版）\""
+                },
+                {
+                    "source": "name:\"Claude Opus 4.5 (Global)\"",
+                    "target": "name:\"Claude Opus 4.5（全球）\""
+                },
+                {
+                    "source": "name:\"Claude Opus 4.6 (Global)\"",
+                    "target": "name:\"Claude Opus 4.6（全球）\""
+                },
+                {
+                    "source": "name:\"Claude Sonnet 4 (Global)\"",
+                    "target": "name:\"Claude Sonnet 4（全球）\""
+                },
+                {
+                    "source": "name:\"Claude Sonnet 4.5 (Global)\"",
+                    "target": "name:\"Claude Sonnet 4.5（全球）\""
+                },
+                {
+                    "source": "name:\"Claude Sonnet 4.6 (Global)\"",
+                    "target": "name:\"Claude Sonnet 4.6（全球）\""
+                },
+                {
+                    "source": "name:\"Llama 3.1 405B Instruct\"",
+                    "target": "name:\"Llama 3.1 405B 指令版\""
+                },
+                {
+                    "source": "name:\"Llama 3.1 70B Instruct\"",
+                    "target": "name:\"Llama 3.1 70B 指令版\""
+                },
+                {
+                    "source": "name:\"Llama 3.1 8B Instruct\"",
+                    "target": "name:\"Llama 3.1 8B 指令版\""
+                },
+                {
+                    "source": "name:\"Claude Haiku 3.5 (latest)\"",
+                    "target": "name:\"Claude Haiku 3.5（最新版）\""
+                },
+                {
+                    "source": "name:\"Claude Sonnet 3.7 (latest)\"",
+                    "target": "name:\"Claude Sonnet 3.7（最新）\""
+                },
+                {
+                    "source": "name:\"Claude Haiku 4.5 (latest)\"",
+                    "target": "name:\"Claude Haiku 4.5（最新）\""
+                },
+                {
+                    "source": "name:\"Claude Opus 4 (latest)\"",
+                    "target": "name:\"Claude Opus 4（最新）\""
+                },
+                {
+                    "source": "name:\"Claude Opus 4.1 (latest)\"",
+                    "target": "name:\"Claude Opus 4.1（最新）\""
+                },
+                {
+                    "source": "name:\"Claude Opus 4.5 (latest)\"",
+                    "target": "name:\"Claude Opus 4.5（最新）\""
+                },
+                {
+                    "source": "name:\"Claude Sonnet 4 (latest)\"",
+                    "target": "name:\"Claude Sonnet 4（最新）\""
+                },
+                {
+                    "source": "name:\"Claude Sonnet 4.5 (latest)\"",
+                    "target": "name:\"Claude Sonnet 4.5（最新）\""
+                },
+                {
+                    "source": "name:\"Gemini 3 Pro Preview\"",
+                    "target": "name:\"Gemini 3 Pro 预览版\""
+                },
+                {
+                    "source": "name:\"Gemini 3.1 Pro Preview\"",
+                    "target": "name:\"Gemini 3.1 Pro 预览版\""
+                },
+                {
+                    "source": "name:\"Gemini 3.1 Flash Lite Preview\"",
+                    "target": "name:\"Gemini 3.1 Flash Lite 预览版\""
+                },
+                {
+                    "source": "name:\"Gemini 3.1 Pro Preview Custom Tools\"",
+                    "target": "name:\"Gemini 3.1 Pro Preview 自定义工具\""
+                },
+                {
+                    "source": "name:\"Gemini Flash Latest\"",
+                    "target": "name:\"Gemini Flash 最新版本\""
+                },
+                {
+                    "source": "name:\"Gemini Flash-Lite Latest\"",
+                    "target": "name:\"Gemini Flash-Lite 最新版\""
+                },
+                {
+                    "source": "name:\"Claude Opus 4.5 Thinking (Antigravity)\"",
+                    "target": "name:\"Claude Opus 4.5 思维版（反重力）\""
+                },
+                {
+                    "source": "name:\"Claude Opus 4.6 Thinking (Antigravity)\"",
+                    "target": "name:\"Claude Opus 4.6 思维版（反重力）\""
+                },
+                {
+                    "source": "name:\"Claude Sonnet 4.5 (Antigravity)\"",
+                    "target": "name:\"Claude Sonnet 4.5（反重力）\""
+                },
+                {
+                    "source": "name:\"Claude Sonnet 4.5 Thinking (Antigravity)\"",
+                    "target": "name:\"Claude Sonnet 4.5 思维版（反重力）\""
+                },
+                {
+                    "source": "name:\"Claude Sonnet 4.6 (Antigravity)\"",
+                    "target": "name:\"Claude Sonnet 4.6（反重力）\""
+                },
+                {
+                    "source": "name:\"Gemini 3 Flash (Antigravity)\"",
+                    "target": "name:\"Gemini 3 Flash（反重力）\""
+                },
+                {
+                    "source": "name:\"Gemini 3.1 Pro High (Antigravity)\"",
+                    "target": "name:\"Gemini 3.1 Pro 高性能版（反重力）\""
+                },
+                {
+                    "source": "name:\"Gemini 3.1 Pro Low (Antigravity)\"",
+                    "target": "name:\"Gemini 3.1 Pro 轻量版（反重力）\""
+                },
+                {
+                    "source": "name:\"Gemini 3 Flash Preview (Cloud Code Assist)\"",
+                    "target": "name:\"Gemini 3 Flash 预览版（Cloud Code Assist）\""
+                },
+                {
+                    "source": "name:\"Gemini 3 Pro Preview (Cloud Code Assist)\"",
+                    "target": "name:\"Gemini 3 Pro 预览版（Cloud Code Assist）\""
+                },
+                {
+                    "source": "name:\"Gemini 3.1 Pro Preview (Cloud Code Assist)\"",
+                    "target": "name:\"Gemini 3.1 Pro 预览版（Cloud Code Assist）\""
+                },
+                {
+                    "source": "name:\"Gemini 1.5 Flash (Vertex)\"",
+                    "target": "name:\"Gemini 1.5 Flash（Vertex）\""
+                },
+                {
+                    "source": "name:\"Gemini 1.5 Flash-8B (Vertex)\"",
+                    "target": "name:\"Gemini 1.5 Flash-8B（Vertex）\""
+                },
+                {
+                    "source": "name:\"Gemini 1.5 Pro (Vertex)\"",
+                    "target": "name:\"Gemini 1.5 Pro（Vertex）\""
+                },
+                {
+                    "source": "name:\"Gemini 3 Flash Preview (Vertex)\"",
+                    "target": "name:\"Gemini 3 Flash 预览版（Vertex）\""
+                },
+                {
+                    "source": "name:\"Gemini 3 Pro Preview (Vertex)\"",
+                    "target": "name:\"Gemini 3 Pro 预览版（Vertex）\""
+                },
+                {
+                    "source": "name:\"Gemini 3.1 Pro Preview (Vertex)\"",
+                    "target": "name:\"Gemini 3.1 Pro 预览版（Vertex）\""
+                },
+                {
+                    "source": "name:\"DeepSeek R1 Distill Llama 70B\"",
+                    "target": "name:\"DeepSeek R1 蒸馏 Llama 70B\""
+                },
+                {
+                    "source": "name:\"Llama 3.1 8B Instant\"",
+                    "target": "name:\"Llama 3.1 8B 即时版\""
+                },
+                {
+                    "source": "name:\"Llama 3.3 70B Versatile\"",
+                    "target": "name:\"Llama 3.3 70B 多功能版\""
+                },
+                {
+                    "source": "name:\"Codestral (latest)\"",
+                    "target": "name:\"Codestral (最新)\""
+                },
+                {
+                    "source": "name:\"Magistral Medium (latest)\"",
+                    "target": "name:\"Magistral Medium (最新)\""
+                },
+                {
+                    "source": "name:\"Ministral 3B (latest)\"",
+                    "target": "name:\"Ministral 3B（最新）\""
+                },
+                {
+                    "source": "name:\"Ministral 8B (latest)\"",
+                    "target": "name:\"Ministral 8B（最新）\""
+                },
+                {
+                    "source": "name:\"Mistral Large (latest)\"",
+                    "target": "name:\"Mistral Large（最新）\""
+                },
+                {
+                    "source": "name:\"Mistral Medium (latest)\"",
+                    "target": "name:\"Mistral Medium (最新)\""
+                },
+                {
+                    "source": "name:\"Mistral Small (latest)\"",
+                    "target": "name:\"Mistral Small (最新)\""
+                },
+                {
+                    "source": "name:\"Pixtral Large (latest)\"",
+                    "target": "name:\"Pixtral Large (最新)\""
+                },
+                {
+                    "source": "name:\"Arcee AI: Trinity Large Preview (free)\"",
+                    "target": "name:\"Arcee AI：Trinity 大型预览版（免费）\""
+                },
+                {
+                    "source": "name:\"Arcee AI: Trinity Mini\"",
+                    "target": "name:\"Arcee AI：Trinity 迷你版\""
+                },
+                {
+                    "source": "name:\"Arcee AI: Trinity Mini (free)\"",
+                    "target": "name:\"Arcee AI：Trinity 迷你版（免费）\""
+                },
+                {
+                    "source": "name:\"Arcee AI: Virtuoso Large\"",
+                    "target": "name:\"Arcee AI：Virtuoso 大型版\""
+                },
+                {
+                    "source": "name:\"ByteDance Seed: Seed 1.6\"",
+                    "target": "name:\"字节跳动 Seed：Seed 1.6\""
+                },
+                {
+                    "source": "name:\"Google: Gemini 3.1 Flash Lite Preview\"",
+                    "target": "name:\"Google: Gemini 3.1 Flash Lite 预览版\""
+                },
+                {
+                    "source": "name:\"Google: Gemini 3.1 Pro Preview\"",
+                    "target": "name:\"Google: Gemini 3.1 Pro 预览版\""
+                },
+                {
+                    "source": "name:\"Google: Gemini 3.1 Pro Preview Custom Tools\"",
+                    "target": "name:\"Google: Gemini 3.1 Pro 预览版自定义工具\""
+                },
+                {
+                    "source": "name:\"Meituan: LongCat Flash Chat\"",
+                    "target": "name:\"美团: 龙猫闪聊\""
+                },
+                {
+                    "source": "name:\"Meta: Llama 3 8B Instruct\"",
+                    "target": "name:\"Meta: Llama 3 8B 指令模型\""
+                },
+                {
+                    "source": "name:\"Meta: Llama 3.1 70B Instruct\"",
+                    "target": "name:\"Meta: Llama 3.1 70B 指令模型\""
+                },
+                {
+                    "source": "name:\"Meta: Llama 3.1 8B Instruct\"",
+                    "target": "name:\"Meta: Llama 3.1 8B 指令模型\""
+                },
+                {
+                    "source": "name:\"Meta: Llama 3.3 70B Instruct\"",
+                    "target": "name:\"Meta: Llama 3.3 70B 指令模型\""
+                },
+                {
+                    "source": "name:\"Meta: Llama 3.3 70B Instruct (free)\"",
+                    "target": "name:\"Meta: Llama 3.3 70B 指令模型（免费）\""
+                },
+                {
+                    "source": "name:\"Mistral: Mistral Small 3\"",
+                    "target": "name:\"Mistral：Mistral Small 3\""
+                },
+                {
+                    "source": "name:\"Mistral: Mistral Small 4\"",
+                    "target": "name:\"Mistral：Mistral Small 4\""
+                },
+                {
+                    "source": "name:\"Mistral: Mistral Small Creative\"",
+                    "target": "name:\"Mistral：Mistral Small 创意版\""
+                },
+                {
+                    "source": "name:\"Mistral: Mixtral 8x7B Instruct\"",
+                    "target": "name:\"Mistral：Mixtral 8x7B 指令版\""
+                },
+                {
+                    "source": "name:\"Nex AGI: DeepSeek V3.1 Nex N1\"",
+                    "target": "name:\"Nex AGI：DeepSeek V3.1 Nex N1\""
+                },
+                {
+                    "source": "name:\"NVIDIA: Llama 3.1 Nemotron 70B Instruct\"",
+                    "target": "name:\"NVIDIA: Llama 3.1 Nemotron 70B 指令模型\""
+                },
+                {
+                    "source": "name:\"NVIDIA: Llama 3.3 Nemotron Super 49B V1.5\"",
+                    "target": "name:\"NVIDIA: Llama 3.3 Nemotron 超级版 49B V1.5\""
+                },
+                {
+                    "source": "name:\"NVIDIA: Nemotron 3 Nano 30B A3B (free)\"",
+                    "target": "name:\"NVIDIA: Nemotron 3 Nano 30B A3B (免费)\""
+                },
+                {
+                    "source": "name:\"NVIDIA: Nemotron 3 Super\"",
+                    "target": "name:\"NVIDIA: Nemotron 3 超级版\""
+                },
+                {
+                    "source": "name:\"NVIDIA: Nemotron 3 Super (free)\"",
+                    "target": "name:\"NVIDIA: Nemotron 3 Super（免费）\""
+                },
+                {
+                    "source": "name:\"OpenAI: GPT-3.5 Turbo (older v0613)\"",
+                    "target": "name:\"OpenAI: GPT-3.5 Turbo（旧版 v0613）\""
+                },
+                {
+                    "source": "name:\"OpenAI: GPT-4 (older v0314)\"",
+                    "target": "name:\"OpenAI: GPT-4（旧版 v0314）\""
+                },
+                {
+                    "source": "name:\"OpenAI: GPT-4 Turbo (older v1106)\"",
+                    "target": "name:\"OpenAI: GPT-4 Turbo（旧版 v1106）\""
+                },
+                {
+                    "source": "name:\"OpenAI: GPT-4 Turbo Preview\"",
+                    "target": "name:\"OpenAI: GPT-4 Turbo 预览版\""
+                },
+                {
+                    "source": "name:\"OpenAI: GPT-4o (extended)\"",
+                    "target": "name:\"OpenAI: GPT-4o（扩展版）\""
+                },
+                {
+                    "source": "name:\"OpenAI: GPT-5 Image\"",
+                    "target": "name:\"OpenAI: GPT-5 图像\""
+                },
+                {
+                    "source": "name:\"OpenAI: GPT-5 Image Mini\"",
+                    "target": "name:\"OpenAI: GPT-5 图像精简版\""
+                },
+                {
+                    "source": "name:\"OpenAI: GPT-5.1 Chat\"",
+                    "target": "name:\"OpenAI: GPT-5.1 聊天\""
+                },
+                {
+                    "source": "name:\"OpenAI: GPT-5.3 Chat\"",
+                    "target": "name:\"OpenAI: GPT-5.3 聊天\""
+                },
+                {
+                    "source": "name:\"OpenAI: o3 Deep Research\"",
+                    "target": "name:\"OpenAI: o3 深度研究\""
+                },
+                {
+                    "source": "name:\"OpenAI: o3 Mini High\"",
+                    "target": "name:\"OpenAI: o3 Mini 高配版\""
+                },
+                {
+                    "source": "name:\"OpenAI: o4 Mini Deep Research\"",
+                    "target": "name:\"OpenAI: o4 Mini 深度研究\""
+                },
+                {
+                    "source": "name:\"OpenAI: o4 Mini High\"",
+                    "target": "name:\"OpenAI: o4 Mini 高性能\""
+                },
+                {
+                    "source": "name:\"Auto Router\"",
+                    "target": "name:\"自动路由\""
+                },
+                {
+                    "source": "name:\"Free Models Router\"",
+                    "target": "name:\"免费模型路由\""
+                },
+                {
+                    "source": "name:\"Qwen: Qwen3 4B (free)\"",
+                    "target": "name:\"Qwen: Qwen3 4B (免费)\""
+                },
+                {
+                    "source": "name:\"Qwen: Qwen3 Coder 480B A35B (free)\"",
+                    "target": "name:\"Qwen: Qwen3 Coder 480B A35B (免费)\""
+                },
+                {
+                    "source": "name:\"Qwen: Qwen3 Max Thinking\"",
+                    "target": "name:\"Qwen: Qwen3 Max 思维\""
+                },
+                {
+                    "source": "name:\"Qwen: Qwen3 Next 80B A3B Instruct\"",
+                    "target": "name:\"Qwen: Qwen3 Next 80B A3B 指令\""
+                },
+                {
+                    "source": "name:\"Qwen: Qwen3 Next 80B A3B Instruct (free)\"",
+                    "target": "name:\"Qwen: Qwen3 Next 80B A3B 指令（免费）\""
+                },
+                {
+                    "source": "name:\"Qwen: Qwen3 Next 80B A3B Thinking\"",
+                    "target": "name:\"Qwen: Qwen3 Next 80B A3B 思维\""
+                },
+                {
+                    "source": "name:\"Qwen: Qwen3 VL 30B A3B Instruct\"",
+                    "target": "name:\"Qwen: Qwen3 VL 30B A3B 指令\""
+                },
+                {
+                    "source": "name:\"Qwen: Qwen3 VL 30B A3B Thinking\"",
+                    "target": "name:\"Qwen: Qwen3 VL 30B A3B 思维\""
+                },
+                {
+                    "source": "name:\"Qwen: Qwen3 VL 8B Instruct\"",
+                    "target": "name:\"Qwen: Qwen3 VL 8B 指令\""
+                },
+                {
+                    "source": "name:\"Qwen: Qwen3 VL 8B Thinking\"",
+                    "target": "name:\"Qwen: Qwen3 VL 8B 思维\""
+                },
+                {
+                    "source": "name:\"StepFun: Step 3.5 Flash (free)\"",
+                    "target": "name:\"StepFun: 第3.5步：Flash（免费）\""
+                },
+                {
+                    "source": "name:\"Z.ai: GLM 4.5 Air (free)\"",
+                    "target": "name:\"Z.ai: GLM 4.5 Air (免费)\""
+                },
+                {
+                    "source": "name:\"Qwen 3 Max Thinking\"",
+                    "target": "name:\"Qwen 3 Max 思维\""
+                },
+                {
+                    "source": "name:\"GPT 5 Chat\"",
+                    "target": "name:\"GPT 5 聊天\""
+                },
+                {
+                    "source": "name:\"GPT-5 mini\"",
+                    "target": "name:\"GPT-5 迷你\""
+                },
+                {
+                    "source": "name:\"GPT-5 nano\"",
+                    "target": "name:\"GPT-5 纳米\""
+                },
+                {
+                    "source": "name:\"GPT-5 pro\"",
+                    "target": "name:\"GPT-5 专业版\""
+                },
+                {
+                    "source": "name:\"GPT 5.1 Codex Max\"",
+                    "target": "name:\"GPT 5.1 编码大师\""
+                },
+                {
+                    "source": "name:\"Grok 4 Fast Non-Reasoning\"",
+                    "target": "name:\"Grok 4 快速非推理版\""
+                },
+                {
+                    "source": "name:\"Grok 4 Fast Reasoning\"",
+                    "target": "name:\"Grok 4 快速推理版\""
+                },
+                {
+                    "source": "name:\"Grok 4.1 Fast Non-Reasoning\"",
+                    "target": "name:\"Grok 4.1 快速非推理版\""
+                },
+                {
+                    "source": "name:\"Grok 4.1 Fast Reasoning\"",
+                    "target": "name:\"Grok 4.1 快速推理\""
+                },
+                {
+                    "source": "name:\"Grok 3 Latest\"",
+                    "target": "name:\"Grok 3 最新版\""
+                },
+                {
+                    "source": "name:\"Grok 3 Mini Fast\"",
+                    "target": "name:\"Grok 3 Mini 快速版\""
+                },
+                {
+                    "source": "name:\"Grok 3 Mini Fast Latest\"",
+                    "target": "name:\"Grok 3 Mini Fast 最新\""
+                },
+                {
+                    "source": "name:\"Grok 3 Mini Latest\"",
+                    "target": "name:\"Grok 3 Mini 最新\""
+                },
+                {
+                    "source": "name:\"Grok 4.1 Fast\"",
+                    "target": "name:\"Grok 4.1 快速版\""
+                },
+                {
+                    "source": "name:\"Grok 4.1 Fast (Non-Reasoning)\"",
+                    "target": "name:\"Grok 4.1 Fast（非推理）\""
+                },
+                {
+                    "source": "name:\"Grok 4 Fast\"",
+                    "target": "name:\"Grok 4 快速版\""
+                },
+                {
+                    "source": "name:\"Grok 4 Fast (Non-Reasoning)\"",
+                    "target": "name:\"Grok 4 快速版（非推理）\""
+                },
+                {
+                    "source": "name:\"Grok Beta\"",
+                    "target": "name:\"Grok 测试版\""
+                },
+                {
+                    "source": "name:\"Grok Vision Beta\"",
+                    "target": "name:\"Grok 视觉测试版\""
+                },
+                {
+                    "source": "text:\"No result provided\"",
+                    "target": "text:\"未提供结果\""
+                },
+                {
+                    "source": "text:\"(see attached image)\"",
+                    "target": "text:\"（参见附带图像）\""
+                },
+                {
+                    "source": "text:\"You are Claude Code, Anthropic's official CLI for Claude.\"",
+                    "target": "text:\"您是 Claude Code，Anthropic 官方的 Claude 命令行工具。\""
+                },
+                {
+                    "source": "text:\"Tool result image:\"",
+                    "target": "text:\"工具结果图像：\""
+                },
+                {
+                    "source": "text:`Please ignore following [ignore]${ANTIGRAVITY_SYSTEM_INSTRUCTION}[/ignore]`",
+                    "target": "text:`请忽略以下 [ignore]${ANTIGRAVITY_SYSTEM_INSTRUCTION}[/ignore]`"
+                },
+                {
+                    "source": "text:\"Attached image(s) from tool result:\"",
+                    "target": "text:\"来自工具结果的附加图像：\""
+                },
+                {
+                    "source": "description:\"Meta-schema for $data reference (JSON AnySchema extension proposal)\"",
+                    "target": "description:\"$data 引用的元模式（JSON AnySchema 扩展提案）\""
+                },
+                {
+                    "source": "name:\"Plain text\"",
+                    "target": "name:\"纯文本\""
+                },
+                {
+                    "source": "name:\"Augmented Backus-Naur Form\"",
+                    "target": "name:\"扩展巴科斯-诺尔范式\""
+                },
+                {
+                    "source": "name:\"Apache Access Log\"",
+                    "target": "name:\"Apache 访问日志\""
+                },
+                {
+                    "source": "name:\"Apache config\"",
+                    "target": "name:\"Apache 配置\""
+                },
+                {
+                    "source": "name:\"ARM Assembly\"",
+                    "target": "name:\"ARM 汇编\""
+                },
+                {
+                    "source": "name:\"HTML, XML\"",
+                    "target": "name:\"HTML、XML\""
+                },
+                {
+                    "source": "name:\"AVR Assembly\"",
+                    "target": "name:\"AVR 汇编\""
+                },
+                {
+                    "source": "name:\"Backus–Naur Form\"",
+                    "target": "name:\"巴科斯-诺尔范式\""
+                },
+                {
+                    "source": "name:\"DNS Zone\"",
+                    "target": "name:\"DNS 区域\""
+                },
+                {
+                    "source": "name:\"Batch file (DOS)\"",
+                    "target": "name:\"批处理文件 (DOS)\""
+                },
+                {
+                    "source": "name:\"Device Tree\"",
+                    "target": "name:\"设备树\""
+                },
+                {
+                    "source": "name:\"Extended Backus-Naur Form\"",
+                    "target": "name:\"扩展巴科斯-诺尔范式\""
+                },
+                {
+                    "source": "name:\"Erlang REPL\"",
+                    "target": "name:\"Erlang 交互式解释器\""
+                },
+                {
+                    "source": "name:\"Excel formulae\"",
+                    "target": "name:\"Excel 公式\""
+                },
+                {
+                    "source": "name:\"G-code (ISO 6983)\"",
+                    "target": "name:\"G代码（ISO 6983）\""
+                },
+                {
+                    "source": "name:\"TOML, also INI\"",
+                    "target": "name:\"TOML，也包括INI\""
+                },
+                {
+                    "source": "name:\"LSL (Linden Scripting Language)\"",
+                    "target": "name:\"LSL（Linden脚本语言）\""
+                },
+                {
+                    "source": "name:\"MIPS Assembly\"",
+                    "target": "name:\"MIPS 汇编\""
+                },
+                {
+                    "source": "name:\"Nginx config\"",
+                    "target": "name:\"Nginx 配置\""
+                },
+                {
+                    "source": "name:\"Packet Filter config\"",
+                    "target": "name:\"Packet Filter 配置\""
+                },
+                {
+                    "source": "name:\"PHP template\"",
+                    "target": "name:\"PHP 模板\""
+                },
+                {
+                    "source": "name:\"Python profiler\"",
+                    "target": "name:\"Python 分析器\""
+                },
+                {
+                    "source": "name:\"Microtik RouterOS script\"",
+                    "target": "name:\"Microtik RouterOS 脚本\""
+                },
+                {
+                    "source": "name:\"Oracle Rules Language\"",
+                    "target": "name:\"Oracle 规则语言\""
+                },
+                {
+                    "source": "name:\"Shell Session\"",
+                    "target": "name:\"Shell 会话\""
+                },
+                {
+                    "source": "name:\"SML (Standard ML)\"",
+                    "target": "name:\"SML（标准 ML）\""
+                },
+                {
+                    "source": "name:\"SQL (more)\"",
+                    "target": "name:\"SQL（更多）\""
+                },
+                {
+                    "source": "name:\"Tagger Script\"",
+                    "target": "name:\"标签器脚本\""
+                },
+                {
+                    "source": "name:\"Test Anything Protocol\"",
+                    "target": "name:\"测试任何协议\""
+                },
+                {
+                    "source": "name:\"VBScript in HTML\"",
+                    "target": "name:\"HTML 中的 VBScript\""
+                },
+                {
+                    "source": "name:\"Vim Script\"",
+                    "target": "name:\"Vim 脚本\""
+                },
+                {
+                    "source": "name:\"Intel x86 Assembly\"",
+                    "target": "name:\"Intel x86 汇编\""
+                },
+                {
+                    "source": "text:`${line.slice(0,maxChars)}... [truncated]`",
+                    "target": "text:`${line.slice(0,maxChars)}... [已截断]`"
+                },
+                {
+                    "source": "description:\"Bash command to execute\"",
+                    "target": "description:\"要执行的 Bash 命令\""
+                },
+                {
+                    "source": "description:\"Timeout in seconds (optional, no default timeout)\"",
+                    "target": "description:\"超时时间（单位：秒），可选参数，无默认超时\""
+                },
+                {
+                    "source": "text:\"Async functions can only be declared at the top level or inside a block.\"",
+                    "target": "text:\"异步函数只能在顶层或代码块内声明。\""
+                },
+                {
+                    "source": "text:\"'await using' is only allowed within async functions and at the top levels of modules.\"",
+                    "target": "text:\"'await using' 仅允许在异步函数内以及模块的顶层使用。\""
+                },
+                {
+                    "source": "text:\"'await' is only allowed within async functions and at the top levels of modules.\"",
+                    "target": "text:\"'await' 仅允许在异步函数内以及模块的顶层使用。\""
+                },
+                {
+                    "source": "text:\"Generators can only be declared at the top level or inside a block.\"",
+                    "target": "text:\"生成器只能在顶层或代码块内声明。\""
+                },
+                {
+                    "source": "text:\"Initializers are not allowed in ambient contexts.\"",
+                    "target": "text:\"环境上下文中不允许使用初始化器。\""
+                },
+                {
+                    "source": "name:\"Anthropic (Claude Pro/Max)\"",
+                    "target": "name:\"Anthropic（Claude Pro/Max）\""
+                },
+                {
+                    "source": "name:\"Antigravity (Gemini 3, Claude, GPT-OSS)\"",
+                    "target": "name:\"Antigravity (Gemini 3、Claude、GPT-OSS)\""
+                },
+                {
+                    "source": "name:\"ChatGPT Plus/Pro (Codex Subscription)\"",
+                    "target": "name:\"ChatGPT Plus/Pro (Codex 订阅)\""
+                },
+                {
+                    "source": "description:\"Edit a file by replacing exact text. The oldText must match exactly (including whitespace). Use this for precise, surgical edits.\"",
+                    "target": "description:\"通过替换精确文本编辑文件。oldText 必须完全匹配（包括空白字符）。请在需要精确、精细编辑时使用此功能。\""
+                },
+                {
+                    "source": "description:\"Path to the file to edit (relative or absolute)\"",
+                    "target": "description:\"要编辑的文件路径（相对路径或绝对路径）\""
+                },
+                {
+                    "source": "description:\"Exact text to find and replace (must match exactly)\"",
+                    "target": "description:\"要查找并替换的精确文本（必须完全匹配）\""
+                },
+                {
+                    "source": "description:\"New text to replace the old text with\"",
+                    "target": "description:\"用于替换旧文本的新文本\""
+                },
+                {
+                    "source": "text:\"No files found matching pattern\"",
+                    "target": "text:\"未找到匹配该模式的文件\""
+                },
+                {
+                    "source": "description:\"Glob pattern to match files, e.g. '*.ts', '**/*.json', or 'src/**/*.spec.ts'\"",
+                    "target": "description:\"用于匹配文件的 Glob 模式，例如 '*.ts'、'**/*.json' 或 'src/**/*.spec.ts'\""
+                },
+                {
+                    "source": "description:\"Directory to search in (default: current directory)\"",
+                    "target": "description:\"要搜索的目录（默认：当前目录）\""
+                },
+                {
+                    "source": "description:\"Maximum number of results (default: 1000)\"",
+                    "target": "description:\"最多返回结果数（默认：1000）\""
+                },
+                {
+                    "source": "text:\"No matches found\"",
+                    "target": "text:\"未找到匹配项\""
+                },
+                {
+                    "source": "description:\"Search pattern (regex or literal string)\"",
+                    "target": "description:\"搜索模式（正则表达式或字面字符串）\""
+                },
+                {
+                    "source": "description:\"Directory or file to search (default: current directory)\"",
+                    "target": "description:\"要搜索的目录或文件（默认：当前目录）\""
+                },
+                {
+                    "source": "description:\"Filter files by glob pattern, e.g. '*.ts' or '**/*.spec.ts'\"",
+                    "target": "description:\"按 glob 模式筛选文件，例如 '*.ts' 或 '**/*.spec.ts'\""
+                },
+                {
+                    "source": "description:\"Case-insensitive search (default: false)\"",
+                    "target": "description:\"不区分大小写的搜索（默认：false）\""
+                },
+                {
+                    "source": "description:\"Treat pattern as literal string instead of regex (default: false)\"",
+                    "target": "description:\"将模式视为字面字符串而非正则表达式（默认：false）\""
+                },
+                {
+                    "source": "description:\"Number of lines to show before and after each match (default: 0)\"",
+                    "target": "description:\"每个匹配项前后显示的行数（默认：0）\""
+                },
+                {
+                    "source": "description:\"Maximum number of matches to return (default: 100)\"",
+                    "target": "description:\"返回的最大匹配数（默认：100）\""
+                },
+                {
+                    "source": "text:\"(empty directory)\"",
+                    "target": "text:\"(空目录)\""
+                },
+                {
+                    "source": "description:\"Directory to list (default: current directory)\"",
+                    "target": "description:\"要列出的目录（默认：当前目录）\""
+                },
+                {
+                    "source": "description:\"Maximum number of entries to return (default: 500)\"",
+                    "target": "description:\"最多返回的条目数（默认：500）\""
+                },
+                {
+                    "source": "text:`Read image file [${mimeType}]\n[Image omitted: could not be resized below the inline image size limit.]`",
+                    "target": "text:`读取图像文件 [${mimeType}]\n[图像已省略：无法缩放至内联图像大小限制以下。]`"
+                },
+                {
+                    "source": "text:`Read image file [${mimeType}]`",
+                    "target": "text:`读取图像文件 [${mimeType}]`"
+                },
+                {
+                    "source": "description:\"Path to the file to read (relative or absolute)\"",
+                    "target": "description:\"要读取的文件路径（相对路径或绝对路径）\""
+                },
+                {
+                    "source": "description:\"Line number to start reading from (1-indexed)\"",
+                    "target": "description:\"开始读取的行号（从1开始计数）\""
+                },
+                {
+                    "source": "description:\"Maximum number of lines to read\"",
+                    "target": "description:\"最多读取的行数\""
+                },
+                {
+                    "source": "description:\"Write content to a file. Creates the file if it doesn't exist, overwrites if it does. Automatically creates parent directories.\"",
+                    "target": "description:\"将内容写入文件。如果文件不存在则创建，存在则覆盖。自动创建父目录。\""
+                },
+                {
+                    "source": "description:\"Path to the file to write (relative or absolute)\"",
+                    "target": "description:\"要写入的文件路径（相对路径或绝对路径）\""
+                },
+                {
+                    "source": "description:\"Content to write to the file\"",
+                    "target": "description:\"要写入文件的内容\""
+                },
+                {
+                    "source": "description:\"Meta-schema for $data reference (JSON Schema extension proposal)\"",
+                    "target": "description:\"$data 引用的元模式（JSON Schema 扩展提案）\""
+                },
+                {
+                    "source": "text:\"Image reading is disabled.\"",
+                    "target": "text:\"图像读取已禁用。\""
+                },
+                {
+                    "source": "text:\"Unknown error\"",
+                    "target": "text:\"未知错误\""
+                },
+                {
+                    "source": "description:\"OpenRouter remote provider model for mobile chat, tool use, and image-capable turns.\"",
+                    "target": "description:\"OpenRouter 远程提供商模型，支持移动端聊天、工具调用及图像能力交互。\""
+                },
+                {
+                    "source": "description:\"Standard balanced prompt.\"",
+                    "target": "description:\"标准平衡提示。\""
+                },
+                {
+                    "source": "description:\"Shorter, more direct prompt.\"",
+                    "target": "description:\"更短、更直接的提示。\""
+                },
+                {
+                    "source": "description:\"Autonomous agent for vault operations.\"",
+                    "target": "description:\"用于保险库操作的自主代理。\""
+                },
+                {
+                    "source": "text:`Context from ${displayName}:\n\n`",
+                    "target": "text:`来自 ${displayName} 的上下文：\n\n`"
+                },
+                {
+                    "source": "text:\"Reset to Default Prompt\"",
+                    "target": "text:\"重置为默认提示\""
+                },
+                {
+                    "source": "text:\"Generate Title\"",
+                    "target": "text:\"生成标题\""
+                },
+                {
+                    "source": "textContent=\"Generate Title\"",
+                    "target": "textContent=\"生成标题\""
+                },
+                {
+                    "source": "search:\"Search Contents\"",
+                    "target": "search:\"搜索内容\""
+                },
+                {
+                    "source": "text:\"Manage Context\"",
+                    "target": "text:\"管理上下文\""
+                },
+                {
+                    "source": "search:\"Full-text search across notes\"",
+                    "target": "search:\"在笔记中进行全文搜索\""
+                },
+                {
+                    "source": "text:\"Add or remove files from chat context\"",
+                    "target": "text:\"向聊天上下文中添加或移除文件\""
+                },
+                {
+                    "source": "description:\"Character position to start reading from. Use metadata.windowEnd from previous read to continue pagination.\"",
+                    "target": "description:\"开始读取的字符位置。请使用上一次读取返回的 metadata.windowEnd 来继续分页。\""
+                },
+                {
+                    "source": "description:\"Create a new file or overwrite an existing file. Parent directories are created automatically. For partial modifications to existing files, use the edit tool instead.\"",
+                    "target": "description:\"创建新文件或覆盖现有文件。父目录将自动创建。如需对现有文件进行部分修改，请改用编辑工具。\""
+                },
+                {
+                    "source": "description:\"Complete file content to write\"",
+                    "target": "description:\"要写入的完整文件内容\""
+                },
+                {
+                    "source": "description:\"If true (default), creates parent directories that don't exist\"",
+                    "target": "description:\"如果为 true（默认值），则自动创建不存在的父目录\""
+                },
+                {
+                    "source": "description:\"Action when file exists: overwrite (replace), skip (no-op), error (fail), append (add to end)\"",
+                    "target": "description:\"文件存在时的操作：覆盖（替换）、跳过（无操作）、报错（失败）、追加（添加到末尾）\""
+                },
+                {
+                    "source": "description:\"When using append mode, add newline before appending if file doesn't end with one\"",
+                    "target": "description:\"使用追加模式时，若文件末尾不以换行符结尾，则在追加前先添加一个换行符\""
+                },
+                {
+                    "source": "description:\"Apply find-and-replace edits to an existing file. Supports exact matching, regex patterns, loose whitespace matching, and line range targeting. Returns a diff showing changes made.\"",
+                    "target": "description:\"对现有文件应用查找并替换编辑。支持精确匹配、正则表达式模式、宽松空白匹配以及行范围定位。返回显示所做更改的差异（diff）。\""
+                },
+                {
+                    "source": "description:\"Path to file to edit, relative to vault root\"",
+                    "target": "description:\"待编辑文件的路径（相对于仓库根目录）\""
+                },
+                {
+                    "source": "description:\"Text to find. Must match exactly unless mode is 'loose' or isRegex is true.\"",
+                    "target": "description:\"要查找的文本。除非模式为 'loose' 或 isRegex 为 true，否则必须完全匹配。\""
+                },
+                {
+                    "source": "description:\"Replacement text. Use empty string to delete matched text.\"",
+                    "target": "description:\"替换文本。使用空字符串可删除匹配的文本。\""
+                },
+                {
+                    "source": "description:\"If true, treat oldText as a regex pattern\"",
+                    "target": "description:\"如果为 true，则将 oldText 视为正则表达式模式\""
+                },
+                {
+                    "source": "description:\"Regex flags when isRegex is true (e.g., 'gi' for global case-insensitive)\"",
+                    "target": "description:\"当 isRegex 为 true 时使用的正则表达式标志（例如 'gi' 表示全局且不区分大小写）\""
+                },
+                {
+                    "source": "description:\"Which matches to replace: first, last, or all occurrences\"",
+                    "target": "description:\"指定要替换哪些匹配项：第一个、最后一个，还是全部匹配项\""
+                },
+                {
+                    "source": "description:\"exact: match verbatim. loose: ignore leading/trailing whitespace and CRLF differences.\"",
+                    "target": "description:\"exact：逐字匹配；loose：忽略首尾空白字符及 CRLF 差异。\""
+                },
+                {
+                    "source": "description:\"First line to search (1-indexed)\"",
+                    "target": "description:\"要搜索的第一行（从1开始编号）\""
+                },
+                {
+                    "source": "description:\"Last line to search (inclusive)\"",
+                    "target": "description:\"要搜索的最后一行（包含该行）\""
+                },
+                {
+                    "source": "description:\"Start character index (overrides line range)\"",
+                    "target": "description:\"起始字符索引（覆盖行范围）\""
+                },
+                {
+                    "source": "description:\"End character index (overrides line range)\"",
+                    "target": "description:\"结束字符索引（覆盖行范围）\""
+                },
+                {
+                    "source": "description:\"Optional: constrain search to a specific region of the file\"",
+                    "target": "description:\"可选：将搜索限制在文件的特定区域内\""
+                },
+                {
+                    "source": "description:\"In loose mode, apply original line's indentation to replacement\"",
+                    "target": "description:\"在宽松模式下，将原始行的缩进应用到替换内容上\""
+                },
+                {
+                    "source": "description:\"Array of edits to apply sequentially. Each edit operates on the result of previous edits.\"",
+                    "target": "description:\"要依次应用的编辑操作数组。每个编辑操作均作用于前一个编辑操作的结果。\""
+                },
+                {
+                    "source": "description:\"If true (default), fail if any edit doesn't match. If false, skip non-matching edits.\"",
+                    "target": "description:\"如果为 true（默认值），则当任意编辑不匹配时失败；如果为 false，则跳过不匹配的编辑。\""
+                },
+                {
+                    "source": "description:\"Create one or more directories. Creates full path including parent directories. Idempotent: succeeds silently if directory already exists.\"",
+                    "target": "description:\"创建一个或多个目录。递归创建完整路径（包括父目录）。具有幂等性：若目录已存在，则静默成功。\""
+                },
+                {
+                    "source": "description:\"List contents of one or more directories. Returns files and subdirectories with metadata (name, size, timestamps). Use filter to show only files or directories.\"",
+                    "target": "description:\"列出一个或多个目录的内容。返回带有元数据（名称、大小、时间戳）的文件和子目录。可使用 filter 参数仅显示文件或仅显示目录。\""
+                },
+                {
+                    "source": "description:\"Filter results: all (both), files (only files), directories (only folders)\"",
+                    "target": "description:\"筛选结果：全部（文件和文件夹）、文件（仅文件）、目录（仅文件夹）\""
+                },
+                {
+                    "source": "description:\"Sort order for results. Most recent/largest first for modified/size/created.\"",
+                    "target": "description:\"结果的排序顺序。按修改时间/大小/创建时间排序时，最新/最大者优先。\""
+                },
+                {
+                    "source": "description:\"If true, include contents of subdirectories. May be slow for large directory trees.\"",
+                    "target": "description:\"如果为 true，则包含子目录的内容。对于大型目录树，此操作可能较慢。\""
+                },
+                {
+                    "source": "description:\"Move or rename files and folders. Automatically updates all internal wiki-links and embeds pointing to moved items. Creates destination directories as needed.\"",
+                    "target": "description:\"移动或重命名文件和文件夹。自动更新所有指向被移动项目的内部 Wiki 链接和嵌入内容。根据需要创建目标目录。\""
+                },
+                {
+                    "source": "description:\"Current path of file or folder to move\"",
+                    "target": "description:\"待移动的文件或文件夹的当前路径\""
+                },
+                {
+                    "source": "description:\"Target path. Same directory = rename, different directory = move.\"",
+                    "target": "description:\"目标路径。相同目录表示重命名，不同目录表示移动。\""
+                },
+                {
+                    "source": "description:\"Array of move operations. Each specifies source and destination paths.\"",
+                    "target": "description:\"移动操作数组。每个操作指定源路径和目标路径。\""
+                },
+                {
+                    "source": "description:\"Move files or folders to Obsidian's trash. Items can be restored from the .trash folder. Safer than permanent deletion.\"",
+                    "target": "description:\"将文件或文件夹移至 Obsidian 的回收站。项目可从 .trash 文件夹中恢复。比永久删除更安全。\""
+                },
+                {
+                    "source": "description:\"Paths to move to trash, relative to vault root\"",
+                    "target": "description:\"要移至回收站的路径（相对于仓库根目录）\""
+                },
+                {
+                    "source": "description:\"Search for files and folders by name. Returns matching items with path, size, and timestamps. Matches are ranked by relevance (exact matches first, then partial matches).\"",
+                    "target": "description:\"按名称搜索文件和文件夹。返回匹配项的路径、大小及时间戳。匹配结果按相关性排序（精确匹配优先，其次为部分匹配）。\""
+                },
+                {
+                    "source": "description:\"Full-text search across note contents. Returns matching lines with surrounding context (grep-like). Supports plain text and regex patterns.\"",
+                    "target": "description:\"在笔记内容中进行全文搜索。返回匹配的行及上下文（类似 grep）。支持纯文本和正则表达式模式。\""
+                },
+                {
+                    "source": "description:\"Where to search: content (note body), frontmatter (YAML properties), or both\"",
+                    "target": "description:\"搜索范围：内容（笔记正文）、前置元数据（YAML 属性）或两者。\""
+                },
+                {
+                    "source": "description:\"Token budget for results. Increase to 4096 for broader searches. Results are truncated if they exceed budget.\"",
+                    "target": "description:\"结果的 Token 预算。可增至 4096 以支持更广泛的搜索。若结果超出预算，则会被截断。\""
+                },
+                {
+                    "source": "description:\"Open files in the Obsidian workspace for the user to view. Files open in new tabs alongside the chat. Use this when the user would benefit from seeing file contents directly.\"",
+                    "target": "description:\"在 Obsidian 工作区中为用户打开文件以便查看。文件将在新标签页中打开，并与聊天界面并列显示。当用户需要直接查看文件内容时使用此操作。\""
+                },
+                {
+                    "source": "description:\"File path relative to vault root\"",
+                    "target": "description:\"相对于仓库根目录的文件路径\""
+                },
+                {
+                    "source": "description:\"Files to open in Obsidian (max 5 at once)\"",
+                    "target": "description:\"在 Obsidian 中打开的文件（最多同时打开 5 个）\""
+                },
+                {
+                    "source": "description:\"Manage which files are included in the chat context. Adding files makes their contents available for reference in subsequent messages. Removing files reduces context size.\"",
+                    "target": "description:\"管理哪些文件包含在聊天上下文中。添加文件后，其内容可在后续消息中作为参考使用。移除文件可减小上下文大小。\""
+                },
+                {
+                    "source": "description:\"add: include file contents in chat context. remove: exclude files from context.\"",
+                    "target": "description:\"添加：将文件内容包含在聊天上下文中；移除：从上下文中排除文件。\""
+                },
+                {
+                    "source": "description:\"File paths to add to or remove from context, relative to vault root\"",
+                    "target": "description:\"要添加到或从上下文中移除的文件路径（相对于仓库根目录）\""
+                },
+                {
+                    "source": "text:`# Audio Transcription\nSource: ${file.basename}\nTranscribed: ${new Date().toISOString()}\n\n${text}`",
+                    "target": "text:`# 音频转录\n来源：${file.basename}\n转录时间：${new Date().toISOString()}\n\n${text}`"
+                },
+                {
+                    "source": "description:\"Extract the transcript (captions/subtitles) from a YouTube video. Returns the full text of the video's spoken content. Useful for summarizing videos, extracting information, or getting quotes from video content.\"",
+                    "target": "description:\"从 YouTube 视频中提取字幕（字幕/标题）。返回视频中语音内容的完整文本。适用于视频摘要、信息提取或获取视频内容中的引述。\""
+                },
+                {
+                    "source": "description:\"The YouTube video URL (e.g., https://youtube.com/watch?v=... or https://youtu.be/...)\"",
+                    "target": "description:\"YouTube 视频 URL（例如 https://youtube.com/watch?v=... 或 https://youtu.be/...）\""
+                },
+                {
+                    "source": "description:\"Preferred language code (ISO 639-1, e.g., 'en', 'es', 'fr'). Optional - defaults to the video's primary language.\"",
+                    "target": "description:\"首选语言代码（ISO 639-1，例如 'zh'、'en'、'es'、'fr'）。可选，默认为视频的主要语言。\""
+                },
+                {
+                    "source": "name:\"Filesystem Tools\"",
+                    "target": "name:\"文件系统工具\""
+                },
+                {
+                    "source": "name:\"YouTube Tools\"",
+                    "target": "name:\"YouTube 工具\""
+                },
+                {
+                    "source": "description:`[${server.name}] ${tool.description||\"No description provided\"}`",
+                    "target": "description:`[${server.name}] ${tool.description||\"未提供描述\"}`"
+                },
+                {
+                    "source": "text:\"[image omitted to reduce message size]\"",
+                    "target": "text:\"[为减小消息体积已省略图片]\""
+                },
+                {
+                    "source": "text:\"Mermaid Diagram\"",
+                    "target": "text:\"Mermaid 图表\""
+                },
+                {
+                    "source": "text:\"Copy Code\"",
+                    "target": "text:\"复制代码\""
+                },
+                {
+                    "source": "textContent=\"No changes\"",
+                    "target": "textContent=\"无更改\""
+                },
+                {
+                    "source": "text:\"No changes to display\"",
+                    "target": "text:\"暂无更改可显示\""
+                },
+                {
+                    "source": "text:\"Preview shortened — open the file to review the full change.\"",
+                    "target": "text:\"预览已缩短 — 打开文件以查看完整更改。\""
+                },
+                {
+                    "source": "text:\"Move: \"",
+                    "target": "text:\"移动：\""
+                },
+                {
+                    "source": "text:\"Trash: \"",
+                    "target": "text:\"移至回收站：\""
+                },
+                {
+                    "source": "text:\"Create folders: \"",
+                    "target": "text:\"创建文件夹：\""
+                },
+                {
+                    "source": "textContent=\"✓ Copied\"",
+                    "target": "textContent=\"✓ 已复制\""
+                },
+                {
+                    "source": "text:\"Copy to Clipboard\"",
+                    "target": "text:\"复制到剪贴板\""
+                },
+                {
+                    "source": "text:\"No files found\"",
+                    "target": "text:\"未找到文件\""
+                },
+                {
+                    "source": "text:\"Already in context\"",
+                    "target": "text:\"已在上下文中\""
+                },
+                {
+                    "source": "text:`Show ${remaining} more file${remaining===1?\"\":\"s\"}`",
+                    "target": "text:`显示 ${remaining} 个更多文件${remaining===1?\"\":\"s\"}`"
+                },
+                {
+                    "source": "text:\"Recorder Advanced Controls\"",
+                    "target": "text:\"录音机高级控制\""
+                },
+                {
+                    "source": "text:\"Audio recorder active. Update capture behavior below without leaving your workflow.\"",
+                    "target": "text:\"音频录音器已启用。无需离开当前工作流，即可在下方更新捕获行为。\""
+                },
+                {
+                    "source": "text:\"Audio Recording\"",
+                    "target": "text:\"音频录制\""
+                },
+                {
+                    "source": "textContent=\"Recorder idle\"",
+                    "target": "textContent=\"录音机空闲\""
+                },
+                {
+                    "source": "text:\"SystemSculpt still handles transcription clean-up automatically, but you can change the clean-up prompt in Recording settings.\"",
+                    "target": "text:\"SystemSculpt 仍会自动处理转录清理，但您可在录音设置中更改清理提示。\""
+                },
+                {
+                    "source": "text:\"Open Account to fix license or availability problems, open Recording settings to adjust the prompt, or disable post-processing until SystemSculpt is available again.\"",
+                    "target": "text:\"打开账户以解决许可证或可用性问题，打开录制设置以调整提示，或在 SystemSculpt 恢复可用前禁用后处理。\""
+                },
+                {
+                    "source": "text:\"Export Chat\"",
+                    "target": "text:\"导出聊天记录\""
+                },
+                {
+                    "source": "text:\"Conversation Summary\"",
+                    "target": "text:\"对话摘要\""
+                },
+                {
+                    "source": "text:\"Include Sections\"",
+                    "target": "text:\"包含章节\""
+                },
+                {
+                    "source": "description:\"Chat title, timestamps, and tool statistics.\"",
+                    "target": "description:\"聊天标题、时间戳和工具统计信息。\""
+                },
+                {
+                    "source": "description:\"Reference linked files and attachments.\"",
+                    "target": "description:\"引用关联的文件和附件。\""
+                },
+                {
+                    "source": "description:\"Include the message transcript.\"",
+                    "target": "description:\"包含消息对话记录。\""
+                },
+                {
+                    "source": "description:\"Show hidden reasoning callouts when available.\"",
+                    "target": "description:\"在可用时显示隐藏的推理标注。\""
+                },
+                {
+                    "source": "description:\"Include callouts for each tool invocation.\"",
+                    "target": "description:\"为每次工具调用添加标注。\""
+                },
+                {
+                    "source": "description:\"Attach JSON arguments supplied to each tool call.\"",
+                    "target": "description:\"附加提供给每次工具调用的 JSON 参数。\""
+                },
+                {
+                    "source": "description:\"Attach JSON responses returned by tools.\"",
+                    "target": "description:\"附加工具返回的 JSON 响应。\""
+                },
+                {
+                    "source": "description:\"Embed the contents of referenced files.\"",
+                    "target": "description:\"嵌入所引用文件的内容。\""
+                },
+                {
+                    "source": "description:\"Render linked images in the export.\"",
+                    "target": "description:\"在导出中渲染链接的图片。\""
+                },
+                {
+                    "source": "name:\"New Chat\"",
+                    "target": "name:\"新建聊天\""
+                },
+                {
+                    "source": "description:\"Start a new chat conversation\"",
+                    "target": "description:\"开始新的聊天对话\""
+                },
+                {
+                    "source": "name:\"Clear Chat\"",
+                    "target": "name:\"清除聊天\""
+                },
+                {
+                    "source": "description:\"Remove all messages from the current chat\"",
+                    "target": "description:\"从当前聊天中删除所有消息\""
+                },
+                {
+                    "source": "text:\"Clear chat?\"",
+                    "target": "text:\"清除聊天？\""
+                },
+                {
+                    "source": "text:\"This will remove all messages from the current chat.\"",
+                    "target": "text:\"这将从当前聊天中删除所有消息。\""
+                },
+                {
+                    "source": "name:\"Export Chat\"",
+                    "target": "name:\"导出聊天\""
+                },
+                {
+                    "source": "description:\"Export chat as markdown note\"",
+                    "target": "description:\"将聊天导出为 Markdown 笔记\""
+                },
+                {
+                    "source": "name:\"Copy Chat Path\"",
+                    "target": "name:\"复制聊天路径\""
+                },
+                {
+                    "source": "description:\"Copy the saved chat markdown file path\"",
+                    "target": "description:\"复制已保存的聊天 Markdown 文件路径\""
+                },
+                {
+                    "source": "name:\"Copy Chat Log Paths\"",
+                    "target": "name:\"复制聊天日志路径\""
+                },
+                {
+                    "source": "description:\"Copy the expected file paths for chat debug artifacts\"",
+                    "target": "description:\"复制聊天调试产物的预期文件路径\""
+                },
+                {
+                    "source": "name:\"Copy Chat Debug\"",
+                    "target": "name:\"复制聊天调试信息\""
+                },
+                {
+                    "source": "description:\"Copy a full chat debug snapshot to the clipboard\"",
+                    "target": "description:\"将完整的聊天调试快照复制到剪贴板\""
+                },
+                {
+                    "source": "name:\"Open Chat History\"",
+                    "target": "name:\"打开聊天历史\""
+                },
+                {
+                    "source": "description:\"Open the chat history file\"",
+                    "target": "description:\"打开聊天历史文件\""
+                },
+                {
+                    "source": "name:\"Save as Note\"",
+                    "target": "name:\"另存为笔记\""
+                },
+                {
+                    "source": "description:\"Save chat as a markdown note\"",
+                    "target": "description:\"将聊天保存为 Markdown 笔记\""
+                },
+                {
+                    "source": "name:\"Delete This Chat\"",
+                    "target": "name:\"删除此聊天\""
+                },
+                {
+                    "source": "description:\"Permanently delete this chat and close the view\"",
+                    "target": "description:\"永久删除此聊天并关闭当前视图\""
+                },
+                {
+                    "source": "text:\"Delete this chat?\"",
+                    "target": "text:\"确定要删除此聊天吗？\""
+                },
+                {
+                    "source": "text:\"This will permanently delete the chat file and close this view. This action cannot be undone.\"",
+                    "target": "text:\"这将永久删除聊天文件并关闭当前视图。此操作无法撤销。\""
+                },
+                {
+                    "source": "text:\"Delete Chat\"",
+                    "target": "text:\"删除聊天\""
+                },
+                {
+                    "source": "textContent=\"No commands found\"",
+                    "target": "textContent=\"未找到命令\""
+                },
+                {
+                    "source": "textContent=\"Error searching files. Please try again.\"",
+                    "target": "textContent=\"搜索文件时出错，请重试。\""
+                },
+                {
+                    "source": "text:`You're trying to paste ${Math.round(sizeKB)}KB of text. This might cause performance issues.`",
+                    "target": "text:`您正尝试粘贴 ${Math.round(sizeKB)}KB 的文本，这可能导致性能问题。`"
+                },
+                {
+                    "source": "text:\"Proceed Anyway\"",
+                    "target": "text:\"仍要继续\""
+                },
+                {
+                    "source": "textContent=\"Preparing…\"",
+                    "target": "textContent=\"准备中…\""
+                },
+                {
+                    "source": "text:`\"${fileName}.md\" already exists. Do you want to overwrite it with the latest chat content?`",
+                    "target": "text:`\"${fileName}.md\" 已存在。是否要使用最新的聊天内容覆盖它？`"
+                },
+                {
+                    "source": "text:\"Current for this chat\"",
+                    "target": "text:\"当前适用于本次聊天\""
+                },
+                {
+                    "source": "text:\"Loading models…\"",
+                    "target": "text:\"正在加载模型…\""
+                },
+                {
+                    "source": "text:\"Needs setup\"",
+                    "target": "text:\"需要设置\""
+                },
+                {
+                    "source": "description:\"Allow this hosted SystemSculpt tool call to continue in your local vault.\"",
+                    "target": "description:\"允许此托管的 SystemSculpt 工具调用在您的本地保险库中继续执行。\""
+                },
+                {
+                    "source": "description:\"No custom system prompt\"",
+                    "target": "description:\"无自定义系统提示\""
+                },
+                {
+                    "source": "textContent=`${modelName} doesn't support images. Image context will be skipped.`",
+                    "target": "textContent=`${modelName} 不支持图像。图像上下文将被跳过。`"
+                },
+                {
+                    "source": "text:\"Drop files, folders, or search results to add to context\"",
+                    "target": "text:\"拖放文件、文件夹或搜索结果以添加到上下文中\""
+                },
+                {
+                    "source": "textContent=`Cannot add more files (max ${MAX_FILES} reached)`",
+                    "target": "textContent=`无法添加更多文件（已达最大限制 ${MAX_FILES} 个）`"
+                },
+                {
+                    "source": "textContent=`Add similar note to context (${currentContextSize+fileInfo.count}/${MAX_FILES} total)`",
+                    "target": "textContent=`将类似笔记添加到上下文（当前${currentContextSize+fileInfo.count}/${MAX_FILES}个）`"
+                },
+                {
+                    "source": "textContent=`Add ${fileInfo.count} file${fileInfo.count>1?\"s\":\"\"} from ${typeLabel} (${currentContextSize+fileInfo.count}/${MAX_FILES} total)`",
+                    "target": "textContent=`从${typeLabel}添加${fileInfo.count}个文件${fileInfo.count>1?\"\"：\"\"}（当前${currentContextSize+fileInfo.count}/${MAX_FILES}个）`"
+                },
+                {
+                    "source": "textContent=`Drop files, folders, or search results to add to context (${currentContextSize}/${MAX_FILES})`",
+                    "target": "textContent=`拖放文件、文件夹或搜索结果以添加到上下文（当前${currentContextSize}/${MAX_FILES}）`"
+                },
+                {
+                    "source": "description:\"Shorten the message or attached context, or retry without the current context attachments.\"",
+                    "target": "description:\"缩短消息或附加的上下文，或在不使用当前上下文附件的情况下重试。\""
+                },
+                {
+                    "source": "textContent=`Load earlier messages (${remaining})`",
+                    "target": "textContent=`加载更早的消息（剩余${remaining}条）`"
+                },
+                {
+                    "source": "textContent=`Load earlier messages (${this.virtualStartIndex})`",
+                    "target": "textContent=`加载更早的消息（${this.virtualStartIndex}）`"
+                },
+                {
+                    "source": "text:\"Loading pending files…\"",
+                    "target": "text:\"正在加载待处理的文件…\""
+                },
+                {
+                    "source": "text:\"Collecting pending files…\"",
+                    "target": "text:\"正在收集待处理的文件…\""
+                },
+                {
+                    "source": "text:\"Similar Notes\"",
+                    "target": "text:\"相似笔记\""
+                },
+                {
+                    "source": "text:\"Open a note or chat to see similar content\"",
+                    "target": "text:\"打开一篇笔记或聊天以查看相似内容\""
+                },
+                {
+                    "source": "text:\"Switch to any markdown note or chat view and this panel will show related notes from your vault.\"",
+                    "target": "text:\"切换到任意 Markdown 笔记或聊天视图，此面板将显示您仓库中相关的笔记。\""
+                },
+                {
+                    "source": "text:\"Note is empty\"",
+                    "target": "text:\"笔记为空\""
+                },
+                {
+                    "source": "text:\"Add some content to this note or chat to find similar notes.\"",
+                    "target": "text:\"为此笔记或聊天添加一些内容，以查找相似的笔记。\""
+                },
+                {
+                    "source": "text:\"Error finding similar notes\"",
+                    "target": "text:\"查找相似笔记时出错\""
+                },
+                {
+                    "source": "text:\"Embeddings Disabled\"",
+                    "target": "text:\"嵌入功能已禁用\""
+                },
+                {
+                    "source": "text:\"Enable embeddings in Settings > SystemSculpt AI > Embeddings to find similar notes.\"",
+                    "target": "文本：“在设置 > SystemSculpt AI > 嵌入中启用嵌入功能，以查找相似的笔记。”"
+                },
+                {
+                    "source": "text:`${results.length} similar notes found for \"${displayName}\"`",
+                    "target": "文本：`${results.length} 个与“${displayName}”相似的笔记已找到`"
+                },
+                {
+                    "source": "text:`No similar notes found for \"${displayName}\"`",
+                    "target": "文本：`未找到与“${displayName}”相似的笔记`"
+                },
+                {
+                    "source": "text:\"No similar notes found\"",
+                    "target": "文本：“未找到相似的笔记”"
+                },
+                {
+                    "source": "text:\"This note doesn't have similar content in your vault yet.\"",
+                    "target": "文本：“此笔记在您的仓库中尚无相似内容。”"
+                },
+                {
+                    "source": "text:\"View remaining files\"",
+                    "target": "文本：“查看剩余文件”"
+                },
+                {
+                    "source": "textContent=`Building embeddings... ${percentage}%`",
+                    "target": "textContent=`正在构建嵌入向量... ${percentage}%`"
+                },
+                {
+                    "source": "text:\"Start Processing\"",
+                    "target": "文本：“开始处理”"
+                },
+                {
+                    "source": "description:\"Folder where Studio runs your adapter command. Keep credentials there via env (for example .env.local/DATABASE_URL).\"",
+                    "target": "描述：“Studio 运行适配器命令的文件夹。请通过环境变量在此处保存凭据（例如 .env.local/DATABASE_URL）。”"
+                },
+                {
+                    "source": "description:\"Dataset query/request payload text sent to your adapter.\"",
+                    "target": "描述：“发送至您的适配器的数据集查询/请求负载文本。”"
+                },
+                {
+                    "source": "description:\"Command used to resolve this dataset (for example node, bun, python3, curl).\"",
+                    "target": "description:\"用于解析此数据集的命令（例如 node、bun、python3、curl）。\""
+                },
+                {
+                    "source": "description:\"One argument per line. Use {{query}} to inject the query directly into args. Query is always available in STUDIO_DATASET_QUERY env.\"",
+                    "target": "description:\"每行一个参数。使用 {{query}} 将查询直接注入参数中。查询始终可通过 STUDIO_DATASET_QUERY 环境变量获取。\""
+                },
+                {
+                    "source": "textContent=`Release to create ${label} node`",
+                    "target": "textContent=`发布以创建 ${label} 节点`"
+                },
+                {
+                    "source": "text:\"Quick Actions\"",
+                    "target": "text:\"快速操作\""
+                },
+                {
+                    "source": "text:\"Edit with AI\"",
+                    "target": "text:\"使用 AI 编辑\""
+                },
+                {
+                    "source": "text:\"Edit Image\"",
+                    "target": "text:\"编辑图像\""
+                },
+                {
+                    "source": "text:\"Copy Image\"",
+                    "target": "text:\"复制图像\""
+                },
+                {
+                    "source": "description:\"Unavailable in current options\"",
+                    "target": "description:\"当前选项不可用\""
+                },
+                {
+                    "source": "text:`Custom (${currentValue})`",
+                    "target": "text:`自定义 (${currentValue})`"
+                },
+                {
+                    "source": "text:\"Add Note\"",
+                    "target": "text:\"添加备注\""
+                },
+                {
+                    "source": "text:\"No notes yet. Add one or more markdown notes.\"",
+                    "target": "text:\"暂无备注。请添加一个或多个 Markdown 备注。\""
+                },
+                {
+                    "source": "text:`Latest Output (${summary})`",
+                    "target": "text:`最新输出 (${summary})`"
+                },
+                {
+                    "source": "text:\"Effective Payload\"",
+                    "target": "text:\"有效载荷\""
+                },
+                {
+                    "source": "text:\"Composer supports top-level JSON objects only.\"",
+                    "target": "text:\"Composer 仅支持顶层 JSON 对象。\""
+                },
+                {
+                    "source": "text:\"Switch to Raw for arrays/primitives or reset this node to an empty object.\"",
+                    "target": "text:\"切换到原始模式以编辑数组/基本类型，或重置此节点为空对象。\""
+                },
+                {
+                    "source": "text:\"Reset to {}\"",
+                    "target": "text:\"重置为 {}\""
+                },
+                {
+                    "source": "text:\"No fields yet. Add a row to build this object.\"",
+                    "target": "text:\"暂无字段。添加一行来构建此对象。\""
+                },
+                {
+                    "source": "text:\"Add Field\"",
+                    "target": "text:\"添加字段\""
+                },
+                {
+                    "source": "text:\"Email Preset\"",
+                    "target": "text:\"邮箱预设\""
+                },
+                {
+                    "source": "text:\"LATEST RESULT\"",
+                    "target": "text:\"最新结果\""
+                },
+                {
+                    "source": "text:\"VALUE PREVIEW\"",
+                    "target": "text:\"值预览\""
+                },
+                {
+                    "source": "text:\"CONNECTED INPUTS\"",
+                    "target": "text:\"已连接的输入\""
+                },
+                {
+                    "source": "text:\"None. Use input ports to bind URL/body/auth/query dynamically.\"",
+                    "target": "text:\"无。请使用输入端口动态绑定 URL/正文/认证/查询参数。\""
+                },
+                {
+                    "source": "text:\"Body Text\"",
+                    "target": "text:\"正文文本\""
+                },
+                {
+                    "source": "text:`Missing definition for ${node.kind}@${node.version}.`",
+                    "target": "text:`缺少 ${node.kind}@${node.version} 的定义。`"
+                },
+                {
+                    "source": "text:\"Generating text...\"",
+                    "target": "text:\"正在生成文本...\""
+                },
+                {
+                    "source": "text:\"Legacy terminal node. Interactive terminal sessions are no longer available.\"",
+                    "target": "text:\"传统终端节点。交互式终端会话已不再可用。\""
+                },
+                {
+                    "source": "text:\"Generating image...\"",
+                    "target": "text:\"正在生成图像...\""
+                },
+                {
+                    "source": "text:\"Open a .systemsculpt file from the left file explorer to edit this graph.\"",
+                    "target": "text:\"请从左侧文件资源管理器中打开一个 .systemsculpt 文件以编辑此图。\""
+                },
+                {
+                    "source": "text:\"Image Editor\"",
+                    "target": "文本：“图像编辑器”"
+                },
+                {
+                    "source": "text:\"This editor needs an image source before you can add text, crop, blur, or highlights.\"",
+                    "target": "文本：“此编辑器需要先指定图像源，然后才能添加文字、裁剪、模糊或高亮。”"
+                },
+                {
+                    "source": "text:\"This crop box controls what area is exported from the image.\"",
+                    "target": "文本：“此裁剪框控制从图像中导出的区域。”"
+                },
+                {
+                    "source": "text:\"Studio will keep the original image, add a new AI edit step, and append the edited result.\"",
+                    "target": "文本：“Studio 将保留原始图像，添加一个新的 AI 编辑步骤，并将编辑结果追加到原图之后。”"
+                },
+                {
+                    "source": "text:\"Edit prompt\"",
+                    "target": "文本：“编辑提示词”"
+                },
+                {
+                    "source": "text:\"Tip: mention what should stay the same, what should change, and the style you want.\"",
+                    "target": "text:\"提示：说明哪些内容应保持不变、哪些内容需要修改，以及您期望的风格。\""
+                },
+                {
+                    "source": "text:\"⌘/Ctrl + Enter to submit\"",
+                    "target": "text:\"⌘/Ctrl + Enter 提交\""
+                },
+                {
+                    "source": "text:\"Node Inspector\"",
+                    "target": "text:\"节点检查器\""
+                },
+                {
+                    "source": "text:\"Last Run\"",
+                    "target": "text:\"上次运行\""
+                },
+                {
+                    "source": "text:\"Output Path\"",
+                    "target": "text:\"输出路径\""
+                },
+                {
+                    "source": "text:\"Output Text\"",
+                    "target": "text:\"输出文本\""
+                },
+                {
+                    "source": "text:\"Raw Outputs\"",
+                    "target": "text:\"原始输出\""
+                },
+                {
+                    "source": "text:`Updated: ${runtime.updatedAt}`",
+                    "target": "text:`更新时间：${runtime.updatedAt}`"
+                },
+                {
+                    "source": "text:\"Advanced JSON (Unknown Keys)\"",
+                    "target": "text:\"高级 JSON（未知键）\""
+                },
+                {
+                    "source": "text:\"Add Node\"",
+                    "target": "text:\"添加节点\""
+                },
+                {
+                    "source": "text:\"Insert at cursor\"",
+                    "target": "text:\"在光标处插入\""
+                },
+                {
+                    "source": "text:\"No matching nodes.\"",
+                    "target": "text:\"未找到匹配的节点。\""
+                },
+                {
+                    "source": "text:\"Broken link\"",
+                    "target": "text:\"损坏的链接\""
+                },
+                {
+                    "source": "description:\"Describe how you want the AI to change this image. Studio will add an AI image step, keep the original image, and append the edited result.\"",
+                    "target": "description:\"描述您希望 AI 如何修改此图像。Studio 将添加一个 AI 图像步骤，保留原始图像，并追加编辑后的结果。\""
+                },
+                {
+                    "source": "text:\"SystemSculpt Studio is desktop-only.\"",
+                    "target": "text:\"SystemSculpt Studio 仅支持桌面端。\""
+                },
+                {
+                    "source": "text:`Select Language (${this.availableLanguages.length} available)`",
+                    "target": "text:`选择语言（共 ${this.availableLanguages.length} 种可用）`"
+                },
+                {
+                    "source": "text:\"Transcript Preview\"",
+                    "target": "text:\"转录预览\""
+                },
+                {
+                    "source": "text:\"Pick from your vault\"",
+                    "target": "text:\"从您的保险库中选择\""
+                },
+                {
+                    "source": "text:\"Only audio files are shown.\"",
+                    "target": "text:\"仅显示音频文件。\""
+                },
+                {
+                    "source": "text:\"Drop or upload audio\"",
+                    "target": "text:\"拖放或上传音频文件\""
+                },
+                {
+                    "source": "text:\"Drag in a file or tap to choose from your computer or phone.\"",
+                    "target": "text:\"拖放文件，或点击从您的电脑或手机中选择。\""
+                },
+                {
+                    "source": "text:\"Drag & drop a recording\"",
+                    "target": "text:\"拖放录音文件\""
+                },
+                {
+                    "source": "text:\"Or tap to browse from this device (desktop or phone).\"",
+                    "target": "text:\"或点击从此设备（桌面或手机）中浏览选择。\""
+                },
+                {
+                    "source": "text:\"Choose what to extract\"",
+                    "target": "text:\"选择要提取的内容\""
+                },
+                {
+                    "source": "text:\"Select the outputs you want from this meeting audio.\"",
+                    "target": "text:\"从此会议音频中选择您需要的输出项。\""
+                },
+                {
+                    "source": "text:\"Output location\"",
+                    "target": "text:\"输出位置\""
+                },
+                {
+                    "source": "text:\"Choose where to save the processed note and how to name it.\"",
+                    "target": "text:\"选择处理后的笔记保存位置及命名方式。\""
+                },
+                {
+                    "source": "text:\"Filename pattern\"",
+                    "target": "text:\"文件名模式\""
+                },
+                {
+                    "source": "text:\"Use {{basename}} to insert the audio filename without extension. Extension optional; defaults to .md.\"",
+                    "target": "text:\"使用 {{basename}} 插入不带扩展名的音频文件名。扩展名可选；默认为 .md。\""
+                },
+                {
+                    "source": "text:\"Select or drop an audio file to enable processing.\"",
+                    "target": "text:\"选择或拖放一个音频文件以启用处理。\""
+                },
+                {
+                    "source": "text:\"Scanning Vault\"",
+                    "target": "text:\"扫描保险库\""
+                },
+                {
+                    "source": "text:\"Analyzing files and folders...\"",
+                    "target": "text:\"正在分析文件和文件夹...\""
+                },
+                {
+                    "source": "text:`${this.files.length} files (${this.calculateSize(this.files)})`",
+                    "target": "text:`${this.files.length} 个文件 (${this.calculateSize(this.files)})`"
+                },
+                {
+                    "source": "text:`... and ${this.files.length-10} more files`",
+                    "target": "text:`... 还有 ${this.files.length-10} 个文件`"
+                },
+                {
+                    "source": "text:`Empty Files (${this.emptyFiles.length})`",
+                    "target": "text:`空文件 (${this.emptyFiles.length})`"
+                },
+                {
+                    "source": "text:`... and ${this.emptyFiles.length-5} more files`",
+                    "target": "text:`……以及另外 ${this.emptyFiles.length-5} 个文件`"
+                },
+                {
+                    "source": "text:`Empty Folders (${this.emptyFolders.length})`",
+                    "target": "text:`空文件夹（${this.emptyFolders.length} 个）`"
+                },
+                {
+                    "source": "text:`... and ${this.emptyFolders.length-5} more folders`",
+                    "target": "text:`……以及另外 ${this.emptyFolders.length-5} 个文件夹`"
+                },
+                {
+                    "source": "description:\"SystemSculpt Studio is desktop-only right now.\"",
+                    "target": "description:\"SystemSculpt Studio 目前仅支持桌面端。\""
+                },
+                {
+                    "source": "text=`${context}_No text-rich Studio nodes were found._`",
+                    "target": "text=`${context}_未找到任何支持富文本的 Studio 节点。_`"
+                },
+                {
+                    "source": "text=`${context}\n\n_Additional Studio workflow context omitted for brevity._`",
+                    "target": "text=`${context}\n\n_为简洁起见，省略了额外的 Studio 工作流上下文。_`"
+                },
+                {
+                    "source": "description:\"Watch the Capture Inbox/Transcripts folder, summarize notes, then move them into Areas → Meetings.\"",
+                    "target": "description:\"监控 Capture Inbox/Transcripts 文件夹，汇总笔记，然后将其移入 Areas → Meetings。\""
+                },
+                {
+                    "source": "description:\"Drop clippings into Capture Inbox/Clippings and we’ll normalize and refile them into Resources → Web.\"",
+                    "target": "description:\"将剪辑拖放到 Capture Inbox/Clippings 中，我们将对其进行标准化处理，并重新归档至 Resources → Web。\""
+                },
+                {
+                    "source": "description:\"Catch quick ideas in Capture Inbox/Inbox and move refined notes into Projects → Incubator.\"",
+                    "target": "description:\"在 Capture Inbox/Inbox 中快速记录灵感，并将完善后的笔记移入 Projects → Incubator。\""
+                },
+                {
+                    "source": "text:\"Backlog items run through SystemSculpt automatically. Instructions and execution are handled for you.\"",
+                    "target": "text:\"待办事项将自动通过 SystemSculpt 运行。指令与执行均由系统代为处理。\""
+                },
+                {
+                    "source": "text:\"Process backlog\"",
+                    "target": "text:\"处理积压任务\""
+                },
+                {
+                    "source": "text:\"Run single automation\"",
+                    "target": "text:\"运行单个自动化任务\""
+                },
+                {
+                    "source": "text:\"Inbox clear! No files are waiting.\"",
+                    "target": "text:\"收件箱已清空！没有文件在等待。\""
+                },
+                {
+                    "source": "text:\"Drag & drop an audio file\"",
+                    "target": "text:\"拖放一个音频文件\""
+                },
+                {
+                    "source": "text:\"Or tap to browse from this device.\"",
+                    "target": "text:\"或点击从此设备中浏览。\""
+                },
+                {
+                    "source": "text:\"Opens your system file picker (Finder on macOS).\"",
+                    "target": "text:\"打开系统文件选择器（macOS 上为访达）。\""
+                },
+                {
+                    "source": "text:\"Output format\"",
+                    "target": "text:\"输出格式\""
+                },
+                {
+                    "source": "text:\"Choose what gets saved when transcription finishes.\"",
+                    "target": "text:\"选择转录完成时要保存的内容。\""
+                },
+                {
+                    "source": "text:`Using default: ${this.describeOutputFormat(this.outputFormat)}.`",
+                    "target": "text:`使用默认格式：${this.describeOutputFormat(this.outputFormat)}。`"
+                },
+                {
+                    "source": "text:\"You can re-enable the format chooser anytime in Settings > Audio & Transcription.\"",
+                    "target": "text:\"您随时可在设置 > 音频与转录中重新启用格式选择器。\""
+                },
+                {
+                    "source": "text:\"You can always change this in Settings > Audio & Transcription.\"",
+                    "target": "text:\"您随时可以在设置 > 音频与转录中更改此选项。\""
+                },
+                {
+                    "source": "text:`Showing ${MAX_VISIBLE_FILES} of ${this.filteredFiles.length} audio files`",
+                    "target": "text:`显示 ${MAX_VISIBLE_FILES} 个音频文件（共 ${this.filteredFiles.length} 个）`"
+                },
+                {
+                    "source": "text:\"Select or drop an audio file to enable transcription.\"",
+                    "target": "text:\"请选择或拖放一个音频文件以启用转录。\""
+                },
+                {
+                    "source": "text:`Output: ${this.describeOutputFormat(this.outputFormat)}`",
+                    "target": "text:`输出：${this.describeOutputFormat(this.outputFormat)}`"
+                },
+                {
+                    "source": "text:\"Assistant response:\"",
+                    "target": "text:\"助手回复：\""
+                },
+                {
+                    "source": "text:\"Preview changes\"",
+                    "target": "text:\"预览更改\""
+                },
+                {
+                    "source": "text:\"Apply all\"",
+                    "target": "text:\"全部应用\""
+                },
+                {
+                    "source": "text:\"Discard all\"",
+                    "target": "text:\"全部丢弃\""
+                },
+                {
+                    "source": "textContent=\"Proposed Changes:\"",
+                    "target": "textContent=\"建议的更改：\""
+                },
+                {
+                    "source": "name:\"Toggle Audio Recorder\"",
+                    "target": "name:\"切换音频录制器\""
+                },
+                {
+                    "source": "name:\"Open SystemSculpt Chat\"",
+                    "target": "name:\"打开 SystemSculpt 聊天窗口\""
+                },
+                {
+                    "source": "name:\"Open SystemSculpt History\"",
+                    "target": "name:\"打开 SystemSculpt 历史记录\""
+                },
+                {
+                    "source": "name:\"Open SystemSculpt Chat History (Legacy Alias)\"",
+                    "target": "name:\"打开 SystemSculpt 聊天记录（旧别名）\""
+                },
+                {
+                    "source": "name:\"Open SystemSculpt Janitor\"",
+                    "target": "name:\"打开 SystemSculpt 清理工具\""
+                },
+                {
+                    "source": "name:\"Open Meeting Processor\"",
+                    "target": "name:\"打开会议处理器\""
+                },
+                {
+                    "source": "name:\"Transcribe an audio file\"",
+                    "target": "name:\"转录音频文件\""
+                },
+                {
+                    "source": "name:\"Open SystemSculpt Search\"",
+                    "target": "name:\"打开 SystemSculpt 搜索\""
+                },
+                {
+                    "source": "name:\"Reload Obsidian\"",
+                    "target": "name:\"重新加载 Obsidian\""
+                },
+                {
+                    "source": "name:\"Open SystemSculpt AI Settings\"",
+                    "target": "name:\"打开 SystemSculpt AI 设置\""
+                },
+                {
+                    "source": "name:\"Open Credits & Usage\"",
+                    "target": "name:\"打开致谢与使用情况\""
+                },
+                {
+                    "source": "name:\"Chat with File\"",
+                    "target": "name:\"使用文件聊天\""
+                },
+                {
+                    "source": "name:\"Resume Chat from Current History File\"",
+                    "target": "name:\"从当前历史文件恢复聊天\""
+                },
+                {
+                    "source": "name:\"Change/Generate Title\"",
+                    "target": "name:\"更改/生成标题\""
+                },
+                {
+                    "source": "name:\"Open Similar Notes Panel\"",
+                    "target": "name:\"打开相似笔记面板\""
+                },
+                {
+                    "source": "name:\"Quick Edit (Active File)\"",
+                    "target": "name:\"快速编辑（当前文件）\""
+                },
+                {
+                    "source": "name:\"Run Workflow Automation\"",
+                    "target": "name:\"运行工作流自动化\""
+                },
+                {
+                    "source": "name:\"Show Automation Backlog\"",
+                    "target": "name:\"显示自动化待办列表\""
+                },
+                {
+                    "source": "name:\"YouTube Canvas - Extract transcript and create note\"",
+                    "target": "name:\"YouTube Canvas - 提取字幕并创建笔记\""
+                },
+                {
+                    "source": "name:\"New SystemSculpt Studio Project\"",
+                    "target": "name:\"新建 SystemSculpt Studio 项目\""
+                },
+                {
+                    "source": "name:\"Open SystemSculpt Studio\"",
+                    "target": "name:\"打开 SystemSculpt Studio\""
+                },
+                {
+                    "source": "name:\"Run Current SystemSculpt Studio Project\"",
+                    "target": "name:\"运行当前 SystemSculpt Studio 项目\""
+                },
+                {
+                    "source": "name:\"SystemSculpt Studio: Fit Selection in Viewport\"",
+                    "target": "name:\"SystemSculpt Studio：将选中内容适配到视口\""
+                },
+                {
+                    "source": "name:\"SystemSculpt Studio: Overview Graph in Viewport\"",
+                    "target": "name:\"SystemSculpt Studio：视口中的概览图\""
+                },
+                {
+                    "source": "name:\"Copy Current File Path\"",
+                    "target": "name:\"复制当前文件路径\""
+                },
+                {
+                    "source": "name:\"Show Embeddings Database Statistics (Debug)\"",
+                    "target": "name:\"显示嵌入数据库统计信息（调试用）\""
+                },
+                {
+                    "source": "name:\"Rebuild Embeddings (Current Model)\"",
+                    "target": "name:\"重建嵌入（当前模型）\""
+                },
+                {
+                    "source": "description:\"Optional URL override.\"",
+                    "target": "description:\"可选的 URL 覆盖设置。\""
+                },
+                {
+                    "source": "description:\"Merged into request headers.\"",
+                    "target": "description:\"合并到请求头中。\""
+                },
+                {
+                    "source": "description:\"Query parameters object.\"",
+                    "target": "description:\"查询参数对象。\""
+                },
+                {
+                    "source": "description:\"Template variables for {{param}} in URL.\"",
+                    "target": "description:\"URL 中 {{param}} 的模板变量。\""
+                },
+                {
+                    "source": "description:\"Authorization bearer token override.\"",
+                    "target": "description:\"授权 Bearer Token 覆盖。\""
+                },
+                {
+                    "source": "description:\"Structured request body (forces JSON mode).\"",
+                    "target": "description:\"结构化请求体（强制启用 JSON 模式）。\""
+                },
+                {
+                    "source": "description:\"Raw text request body (forces text mode).\"",
+                    "target": "description:\"原始文本请求体（强制文本模式）。\""
+                },
+                {
+                    "source": "description:\"Optional token for Authorization header.\"",
+                    "target": "description:\"可选的 Authorization 请求头令牌。\""
+                },
+                {
+                    "source": "description:\"Auto chooses text/plain for string input and JSON for structured input.\"",
+                    "target": "description:\"自动为字符串输入选择 text/plain，为结构化输入选择 JSON。\""
+                },
+                {
+                    "source": "description:\"Used when no body input is provided.\"",
+                    "target": "description:\"在未提供请求体输入时使用。\""
+                },
+                {
+                    "source": "description:\"Target output aspect ratio.\"",
+                    "target": "description:\"目标输出宽高比。\""
+                },
+                {
+                    "source": "text:\"Load More\"",
+                    "target": "text:\"加载更多\""
+                },
+                {
+                    "source": "text:\"Total remaining\"",
+                    "target": "text:\"剩余总量\""
+                },
+                {
+                    "source": "text:`${this.formatCredits(metrics.conservativeTotalRemaining)} credits`",
+                    "target": "text:`${this.formatCredits(metrics.conservativeTotalRemaining)} 个积分`"
+                },
+                {
+                    "source": "text:`${this.formatCredits(item.creditsCharged)} credits`",
+                    "target": "text:`${this.formatCredits(item.creditsCharged)} 个积分`"
+                },
+                {
+                    "source": "text:\"Credits snapshot unavailable\"",
+                    "target": "text:\"积分快照不可用\""
+                },
+                {
+                    "source": "text:\"Refresh to try again\"",
+                    "target": "text:\"刷新以重试\""
+                },
+                {
+                    "source": "text:\"Account & License\"",
+                    "target": "text:\"账户与许可证\""
+                },
+                {
+                    "source": "text:\"Help & resources\"",
+                    "target": "text:\"帮助与资源\""
+                },
+                {
+                    "source": "text:\"Report an issue\"",
+                    "target": "text:\"报告问题\""
+                },
+                {
+                    "source": "text:\"Checking provider connections…\"",
+                    "target": "text:\"正在检查提供商连接…\""
+                },
+                {
+                    "source": "text:\"Save an API key to replace the stored subscription login, or disconnect it from the row above.\"",
+                    "target": "text:\"保存一个 API 密钥以替换已存储的订阅登录信息，或从上方行中将其断开连接。\""
+                },
+                {
+                    "source": "text:\"Subscription login\"",
+                    "target": "text:\"订阅登录\""
+                },
+                {
+                    "source": "text:\"API key\"",
+                    "target": "text:\"API 密钥\""
+                },
+                {
+                    "source": "text:`No local setup instructions are available for ${label}.`",
+                    "target": "text:`${label} 无可用的本地设置说明。`"
+                },
+                {
+                    "source": "text:`Use ${setup.endpoint} with ${setup.api}. Pi only needs model ids inside the models array.`",
+                    "target": "text:`使用 ${setup.endpoint} 和 ${setup.api}。Pi 仅需 models 数组内的模型 ID。`"
+                },
+                {
+                    "source": "text:`Pi expects an apiKey field in the provider config. Use your real local server token if you have one; otherwise a placeholder like \"${setup.apiKeyPlaceholder}\" is fine for servers that ignore auth.`",
+                    "target": "text:`Pi 期望 provider 配置中包含 apiKey 字段。若您有真实的本地服务器令牌，请使用该令牌；否则，对于忽略认证的服务器，使用占位符（例如 \"${setup.apiKeyPlaceholder}\"）即可。`"
+                },
+                {
+                    "source": "text:`Sign in with your ${label} account. A browser window will open.`",
+                    "target": "text:`使用您的 ${label} 账户登录。将打开一个浏览器窗口。`"
+                },
+                {
+                    "source": "text:`Continue with ${label}`",
+                    "target": "text:`继续使用 ${label}`"
+                },
+                {
+                    "source": "text:`Set ${envVar} in your environment before launching Obsidian, then refresh.`",
+                    "target": "text:`在启动 Obsidian 前，先在您的环境中设置 ${envVar}，然后刷新页面。`"
+                },
+                {
+                    "source": "text:\"Chat settings\"",
+                    "target": "text:\"聊天设置\""
+                },
+                {
+                    "source": "text:\"SystemSculpt chat works the same way across desktop and mobile. Use this tab for chat preferences and display choices.\"",
+                    "target": "text:\"SystemSculpt 聊天在桌面端和移动端的工作方式完全相同。请在此标签页中配置聊天偏好设置和显示选项。\""
+                },
+                {
+                    "source": "text:\"Tip: You can always change transcription output format and modal behavior here.\"",
+                    "target": "text:\"提示：您可随时在此处更改转录输出格式和模态框行为。\""
+                },
+                {
+                    "source": "text:\"Directory Settings\"",
+                    "target": "text:\"目录设置\""
+                },
+                {
+                    "source": "text:\"Directory Diagnostics\"",
+                    "target": "text:\"目录诊断\""
+                },
+                {
+                    "source": "description:\"Select a backup to restore. This will replace your current settings.\"",
+                    "target": "description:\"选择要恢复的备份。这将替换您当前的设置。\""
+                },
+                {
+                    "source": "text:\"Enter a name for the new manual backup:\"",
+                    "target": "text:\"为新的手动备份输入名称：\""
+                },
+                {
+                    "source": "text:\"Create Manual Backup\"",
+                    "target": "text:\"创建手动备份\""
+                },
+                {
+                    "source": "name:\"Latest Automatic Backup\"",
+                    "target": "name:\"最新自动备份\""
+                },
+                {
+                    "source": "name:`Backup from ${date}`",
+                    "target": "name:`来自 ${date} 的备份`"
+                },
+                {
+                    "source": "name:`Emergency Backup`",
+                    "target": "name:“紧急备份”"
+                },
+                {
+                    "source": "text:\"Settings backup\"",
+                    "target": "text:“设置备份”"
+                },
+                {
+                    "source": "text:\"Enable semantic search to find similar notes by meaning instead of keywords.\"",
+                    "target": "text:“启用语义搜索，通过含义（而非关键词）查找相似笔记。”"
+                },
+                {
+                    "source": "text:\"Decide which folders or files should be ignored during embeddings processing.\"",
+                    "target": "text:“决定在嵌入处理过程中应忽略哪些文件夹或文件。”"
+                },
+                {
+                    "source": "text:\"Image Generation\"",
+                    "target": "text:\"图像生成\""
+                },
+                {
+                    "source": "text:\"Configure SystemSculpt Studio (desktop-only) and run image generation through SystemSculpt.\"",
+                    "target": "text:\"配置 SystemSculpt Studio（仅限桌面端）并通过 SystemSculpt 运行图像生成。\""
+                },
+                {
+                    "source": "text:\"SystemSculpt Image Generation\"",
+                    "target": "text:\"SystemSculpt 图像生成\""
+                },
+                {
+                    "source": "text:\"Import and sync highlights, books, articles, and annotations from Readwise into your vault.\"",
+                    "target": "text:\"从 Readwise 导入并同步高亮、书籍、文章和注释到您的仓库中。\""
+                },
+                {
+                    "source": "text:\"Import options\"",
+                    "target": "text:\"导入选项\""
+                },
+                {
+                    "source": "text:\"Sync settings\"",
+                    "target": "text:\"同步设置\""
+                },
+                {
+                    "source": "text:\"Get your token\"",
+                    "target": "text:\"获取您的令牌\""
+                },
+                {
+                    "source": "text:\" from Readwise.\"",
+                    "target": "text:\"来自 Readwise。\""
+                },
+                {
+                    "source": "text:\"Sync status\"",
+                    "target": "text:\"同步状态\""
+                },
+                {
+                    "source": "text:`Last sync: ${formattedDate}`",
+                    "target": "text:`上次同步：${formattedDate}`"
+                },
+                {
+                    "source": "text:\"Never synced\"",
+                    "target": "text:\"从未同步\""
+                },
+                {
+                    "source": "text:`Total imported: ${syncState.totalImported} items`",
+                    "target": "text:`共导入：${syncState.totalImported} 项`"
+                },
+                {
+                    "source": "text:`Next sync: ${nextSync.toLocaleString()}`",
+                    "target": "text:`下次同步：${nextSync.toLocaleString()}`"
+                },
+                {
+                    "source": "text:`Last error: ${syncState.lastError}`",
+                    "target": "text:`最后错误：${syncState.lastError}`"
+                },
+                {
+                    "source": "textContent=\"Disable Update Notifications\"",
+                    "target": "textContent=\"禁用更新通知\""
+                },
+                {
+                    "source": "text:\"Advanced Settings\"",
+                    "target": "text:\"高级设置\""
+                },
+                {
+                    "source": "description:\"This will delete ALL saved settings and customizations for SystemSculpt, returning everything to default. Do you want to continue?\"",
+                    "target": "description:\"此操作将删除 SystemSculpt 的所有已保存设置和自定义配置，并将所有内容恢复为默认状态。是否继续？\""
+                },
+                {
+                    "source": "description:\"This will replace your current configuration with the recommended defaults. Any customizations you've applied will be overwritten. Do you want to continue?\"",
+                    "target": "description:\"此操作将使用推荐的默认配置替换当前配置。您所做的一切自定义更改都将被覆盖。是否继续？\""
+                },
+                {
+                    "source": "text:\"Send feedback\"",
+                    "target": "text:\"发送反馈\""
+                },
+                {
+                    "source": "text:\"Manage your SystemSculpt account, workspace preferences, and vault integrations.\"",
+                    "target": "text:\"管理您的 SystemSculpt 账户、工作区偏好设置和保险库集成。\""
+                },
+                {
+                    "source": "text:\"Search settings\"",
+                    "target": "text:\"搜索设置\""
+                },
+                {
+                    "source": "text:\"Jump straight to any setting, section, or integration.\"",
+                    "target": "text:\"直接跳转到任意设置、章节或集成。\""
+                },
+                {
+                    "source": "text:`v${currentVersion} (checking...)`",
+                    "target": "text:`v${currentVersion} (正在检查...)`"
+                },
+                {
+                    "source": "text:\"No matching settings\"",
+                    "target": "text:\"未找到匹配的设置\""
+                },
+                {
+                    "source": "text:`${this.searchState.results.length} ${this.searchState.results.length===1?\"result\":\"results\"}`",
+                    "target": "text:`${this.searchState.results.length} ${this.searchState.results.length===1?\"个结果\":\"个结果\"}`"
+                },
+                {
+                    "source": "text:`across ${this.searchState.groups.length} ${this.searchState.groups.length===1?\"tab\":\"tabs\"}`",
+                    "target": "text:`分布在 ${this.searchState.groups.length} ${this.searchState.groups.length===1?\"个标签页\":\"个标签页\"}`"
+                },
+                {
+                    "source": "text:`${this.allSettingsIndex.length} searchable items`",
+                    "target": "text:`${this.allSettingsIndex.length} 个可搜索项`"
+                },
+                {
+                    "source": "text:`across ${tabCount||this.tabsDef.length} ${(tabCount||this.tabsDef.length)===1?\"tab\":\"tabs\"}`",
+                    "target": "text:`分布在 ${tabCount||this.tabsDef.length} ${(tabCount||this.tabsDef.length)===1?\"个标签页\":\"个标签页\"}`"
+                },
+                {
+                    "source": "text:\"Search across every tab\"",
+                    "target": "text:\"在所有标签页中搜索\""
+                },
+                {
+                    "source": "text:\"Search titles, descriptions, and section anchors.\"",
+                    "target": "text:\"搜索标题、描述和章节锚点。\""
+                },
+                {
+                    "source": "text:\"Try a broader phrase, a tab name, or a feature like studio, provider, or embeddings.\"",
+                    "target": "text:\"尝试更宽泛的短语、标签页名称，或功能关键词，例如 studio、provider 或 embeddings。\""
+                },
+                {
+                    "source": "text:`This preview is truncated. The file is too large to preview completely.`",
+                    "target": "text:`此预览已被截断。文件过大，无法完整预览。`"
+                },
+                {
+                    "source": "text:`Error loading preview: ${err.message||\"Unknown error\"}`",
+                    "target": "text:`加载预览时出错：${err.message||\"未知错误\"}`"
+                },
+                {
+                    "source": "textContent=\"Resume this chat\"",
+                    "target": "textContent=\"继续此聊天\""
+                },
+                {
+                    "source": "name=\"Custom Provider\"",
+                    "target": "name=\"自定义提供程序\""
+                },
+                {
+                    "source": "text:\"Unexpected HTML response\"",
+                    "target": "text:\"意外的 HTML 响应\""
+                },
+                {
+                    "source": "text:\"License issue\"",
+                    "target": "text:\"许可证问题\""
+                },
+                {
+                    "source": "text:\"Rate limited\"",
+                    "target": "text:\"请求过于频繁\""
+                },
+                {
+                    "source": "text:\"Provider unavailable\"",
+                    "target": "text:\"服务提供商不可用\""
+                },
+                {
+                    "source": "text:\"Network error\"",
+                    "target": "text:\"网络错误\""
+                },
+                {
+                    "source": "text:\"Bulk Workflow Detected\"",
+                    "target": "text:\"检测到批量工作流\""
+                },
+                {
+                    "source": "text:`${this.pendingFiles.length} files detected (${parts.join(\", \")})`",
+                    "target": "text:`${this.pendingFiles.length} 个文件被检测到 (${parts.join(\", \")})`"
+                },
+                {
+                    "source": "text:\"Files will be processed in batches of 3 and stop on the first error\"",
+                    "target": "text:\"文件将按每批3个进行处理，并在遇到第一个错误时停止\""
+                },
+                {
+                    "source": "text:\"Skip All will mark these files as skipped so they do not auto-process. Clear skips in Settings -> Workflow.\"",
+                    "target": "text:\"跳过全部会将这些文件标记为已跳过，使其不会自动处理。在设置 -> 工作流中清除跳过标记。\""
+                },
+                {
+                    "source": "text:\"Skip All (mark skipped)\"",
+                    "target": "text:\"跳过全部（标记为已跳过）\""
+                },
+                {
+                    "source": "text:`Process ${this.pendingFiles.length}`",
+                    "target": "text:`处理 ${this.pendingFiles.length}`"
+                },
+                {
+                    "source": "text:\"Processing Workflows\"",
+                    "target": "text:\"正在处理工作流\""
+                },
+                {
+                    "source": "text=`${this.completedCount} / ${this.totalFiles} complete`",
+                    "target": "text=`${this.completedCount} / ${this.totalFiles} 已完成`"
+                },
+                {
+                    "source": "textContent=\"Syncing Readwise...\"",
+                    "target": "textContent=\"正在同步 Readwise...\""
+                },
+                {
+                    "source": "textContent=`${current} of ${total}`",
+                    "target": "textContent=`${current} / ${total}`"
+                },
+                {
+                    "source": "textContent=\"Sync Complete\"",
+                    "target": "textContent=\"同步完成\""
+                },
+                {
+                    "source": "textContent=\"Sync Failed\"",
+                    "target": "textContent=\"同步失败\""
+                },
+                {
+                    "source": "name:\"Copy Resource Usage Report\"",
+                    "target": "name:\"复制资源使用报告\""
+                },
+                {
+                    "source": "name:\"Run Audio Chunking Analysis\"",
+                    "target": "name:\"运行音频分块分析\""
+                },
+                {
+                    "source": "name:\"Find Similar Notes (Current Note)\"",
+                    "target": "name:\"查找相似笔记（当前笔记）\""
+                },
+                {
+                    "source": "name:\"Process Embeddings\"",
+                    "target": "name:\"处理嵌入向量\""
+                },
+                {
+                    "source": "name:\"Rebuild Embeddings\"",
+                    "target": "name:\"重建嵌入\""
+                },
+                {
+                    "source": "name:\"Toggle Mobile Emulation Mode\"",
+                    "target": "name:\"切换移动设备仿真模式\""
                 }
             ]
         }
